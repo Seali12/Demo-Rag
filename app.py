@@ -15,37 +15,12 @@ from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_community.llms.ollama import Ollama
 from langchain.prompts import PromptTemplate
 from PyPDF2.errors import EmptyFileError, PdfReadError
+import tabula
 
 #pip install langchain_community
 import os
 load_dotenv() #ejecuta lo q esta en env
 #Si tira error del token utilizar sentence-transformers==2.2.2
-def process_pdf(pdf_path):
-    pdfReader = PdfReader(pdf_path)
-    texto_crudo = ''
-    for page in pdfReader.pages:
-        contenido = page.extract_text()
-        if contenido:
-            texto_crudo += contenido
-    return texto_crudo
-
-# def process_folder(folder_path):
-#     all_text = ""
-#     for root, dirs, files in os.walk(folder_path):
-#         for file in files:
-#             if file.endswith('.pdf'):
-#                 pdf_path = os.path.join(root, file)
-#                 print(f"Procesando: {pdf_path}")
-#                 all_text += process_pdf(pdf_path) + "\n\n"
-    
-#     text_splitter = CharacterTextSplitter(
-#         separator="\n",
-#         chunk_size=1200,
-#         chunk_overlap=200,
-#         length_function=len,
-#     )
-#     return text_splitter.split_text(all_text)
-
 def process_pdf(pdf_path):
     try:
         pdfReader = PdfReader(pdf_path)
@@ -53,7 +28,13 @@ def process_pdf(pdf_path):
         for page in pdfReader.pages:
             contenido = page.extract_text()
             if contenido:
-                texto_crudo += contenido
+                #  diferentes codificaciones
+                for encoding in ['utf-8', 'latin-1', 'iso-8859-1']:
+                    try:
+                        texto_crudo += contenido.encode(encoding).decode('utf-8')
+                        break
+                    except UnicodeDecodeError:
+                        continue
         return texto_crudo
     except EmptyFileError:
         print(f"Warning: {pdf_path} is empty. Skipping.")
@@ -67,7 +48,7 @@ def process_pdf(pdf_path):
 
 def process_folder(folder_path):
     all_text = ""
-    for root, dirs, files in os.walk(folder_path):
+    for root,dirs, files in os.walk(folder_path):
         for file in files:
             if file.endswith('.pdf'):
                 pdf_path = os.path.join(root, file)
@@ -81,8 +62,8 @@ def process_folder(folder_path):
     
     text_splitter = CharacterTextSplitter(
         separator="\n",
-        chunk_size=1600,
-        chunk_overlap=400,
+        chunk_size=2000, #pruebo un valor mas alto
+        chunk_overlap=800,
         length_function=len,
     )
     return text_splitter.split_text(all_text)
@@ -104,22 +85,26 @@ def load_index(index_name):
 
 
 def setup_qa_system(index):
-    #para la notebook utilizo un modelo mas chico porque sino tarda una bocha en correr
-    #voy a utilizar phi -> no sirfe, es una poronga, buscar un modelo mas chico probar con mistral o algo asi
-    #tinyllama-> no sirve
-    #orca-mini no sirve
 
-    llm = Ollama(model="gemma2:2b")
+    llm = Ollama(model="llama3")
     #probar ponerle que es de recursos humanos
-    prompt_template = """Eres un asistente experto en temas legales y civiles relacionado con el Ejercito Argentino.
-                        Si no sabes la respuesta, pregunta para mas contexto. 
-                        Siempre responde en español. 
-                            Utiliza la siguiente información para responder a la pregunta del usuario:
-    
-    {context}
-    
-    Pregunta: {question}
-    Respuesta detallada y consisa:"""
+    prompt_template = """Eres un asistente virtual especializado en temas legales, civiles y administrativos relacionados con el Ejército Argentino. Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
+
+        Instrucciones:
+        1. Responde siempre en español, utilizando terminología oficial del Ejército Argentino cuando sea apropiado.
+        2. Basa tus respuestas únicamente en la información proporcionada en el contexto. No inventes ni asumas información adicional.
+        3. Si la información en el contexto es insuficiente para responder completamente, indica claramente qué partes de la pregunta puedes responder y qué información adicional sería necesaria.
+        4. Si encuentras información contradictoria en el contexto, señálalo en tu respuesta y explica las discrepancias.
+        5. Si la pregunta involucra aspectos legales o administrativos, cita la normativa o reglamento relevante si está disponible en el contexto.
+        6. Organiza tu respuesta de manera clara y estructurada, utilizando viñetas o numeración si es necesario para mejorar la legibilidad.
+
+        Contexto proporcionado:
+        {context}
+
+        Pregunta del usuario: {question}
+
+        Respuesta detallada y concisa:
+        """
     
     PROMPT = PromptTemplate(
         template=prompt_template, input_variables=["context", "question"]
@@ -128,7 +113,7 @@ def setup_qa_system(index):
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
-        retriever=index.as_retriever(search_kwargs={"k": 8}),
+        retriever=index.as_retriever(search_kwargs={"k": 10}),
         return_source_documents=True,
         chain_type_kwargs={"prompt": PROMPT}
     )
@@ -140,7 +125,7 @@ def ask_question(qa_system, question):
     return result["result"], result["source_documents"]
 
 # Configuración principal
-folder_path = 'AlgunosAnexos'  # Reemplaza esto con la ruta a tu carpeta de PDFs
+folder_path = 'REDOAPE_ABR24'  # Reemplaza esto con la ruta a tu carpeta de PDFs
 index_name = 'IndiceMultiplesPDFs'
 
 # Verificar si el índice ya existe
@@ -173,3 +158,6 @@ while True:
     print("\n" + "-"*50)
 
 print("¡Gracias por usar el sistema de preguntas y respuestas!")
+
+
+
