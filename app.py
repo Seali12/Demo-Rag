@@ -2,13 +2,18 @@ import os
 from concurrent.futures import ProcessPoolExecutor
 from PyPDF2 import PdfReader
 from PyPDF2.errors import EmptyFileError, PdfReadError
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
-from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain_community.llms.ollama import Ollama
 from langchain.prompts import PromptTemplate
+from llama_index.core import SimpleDirectoryReader, ServiceContext
+from llama_index.core import  GPTVectorStoreIndex
+from llama_index.legacy import  LLMPredictor
+from langchain.chains.retrieval_qa.base import RetrievalQA
+from llama_index.legacy.embeddings import LangchainEmbedding
+from llama_index.legacy.storage import StorageContext
+from llama_index.legacy import  load_index_from_storage
+
 from dotenv import load_dotenv
+from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 
 load_dotenv()
 
@@ -25,7 +30,7 @@ def process_pdf(pdf_path):
         return ""
 
 def process_folder(folder_path):
-    """Processes all PDFs in the folder and splits text into chunks."""
+    """Processes all PDFs in the folder and returns them as a list of text chunks."""
     all_text = []
     with ProcessPoolExecutor() as executor:
         for root, dirs, files in os.walk(folder_path):
@@ -37,32 +42,37 @@ def process_folder(folder_path):
     if not all_text:
         raise ValueError("No valid PDF content found in the specified folder.")
     
-    text_splitter = CharacterTextSplitter(
-        separator="\n",
-        chunk_size=1600, #subir a 2k
-        chunk_overlap=400,
-        length_function=len,
-    )
-    return text_splitter.split_text("\n\n".join(all_text))
+    return all_text
 
 def create_and_save_index(texts, index_name):
-    """Creates and saves a FAISS index for the provided texts."""
-    embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2") #probar otro emebdding
+    """Creates and saves a LlamaIndex from the provided texts."""
+    # Convert texts into documents
+    documents = [Document(text) for text in texts]
 
-    document_search = FAISS.from_texts(texts, embeddings)
-    
-    os.makedirs("faiss_indexes", exist_ok=True)
-    document_search.save_local(f"faiss_indexes/{index_name}")
+    # Set up the LLM predictor using Ollama
+    llm_predictor = LLMPredictor(llm=Ollama(model="llama3"))
+
+    # Set up embeddings using HuggingFace
+    embeddings = LangchainEmbedding(HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"))
+
+    # Create a service context
+    service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor, embed_model=embeddings)
+
+    # Create the index
+    index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
+
+    # Save the index
+    index.storage_context.persist(f"./indexes/{index_name}")
     print(f"Index saved as {index_name}")
 
 def load_index(index_name):
-    """Loads a saved FAISS index."""
-    embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    return FAISS.load_local(f"faiss_indexes/{index_name}", embeddings, allow_dangerous_deserialization=True)
+    """Loads a saved LlamaIndex index."""
+    storage_context = StorageContext.from_defaults(persist_dir=f"./indexes/{index_name}")
+    return load_index_from_storage(storage_context)
 
 def setup_qa_system(index):
-    """Sets up the QA system using the specified FAISS index."""
-    llm = Ollama(model="llama3") #modelo a evaluar
+    """Sets up the QA system using the specified LlamaIndex."""
+    llm = Ollama(model="llama3")
     
     prompt_template = """Eres un asistente virtual especializado en temas legales, civiles y administrativos relacionados con el Ejército Argentino. Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
 
@@ -87,33 +97,19 @@ def setup_qa_system(index):
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
-        retriever=index.as_retriever(search_kwargs={"k": 8}),
+        retriever=index.as_retriever(search_kwargs={"k": 3}),
         return_source_documents=True,
         chain_type_kwargs={"prompt": PROMPT}
     )
     
     return qa_chain
 
-def ask_question(qa_system, question, conversation_history):
-    """Asks a question to the QA system, including conversation history."""
-    
-    # Format the conversation history into the context
-    history_context = "\n".join([f"Pregunta: {q}\nRespuesta: {a}" for q, a in conversation_history])
-
-    # Ask the new question, passing the history as context
-    result = qa_system({"query": question, "context": history_context})
-    
-    # Add the new question and answer to the history
-    conversation_history.append((question, result["result"]))
-    
-    return result["result"], result["source_documents"]
-
 if __name__ == '__main__':
     folder_path = 'AlgunosAnexos'
     index_name = 'IndiceMultiplesPDFs'
 
     # Check if the index exists, otherwise create it
-    if not os.path.exists(f"faiss_indexes/{index_name}"):
+    if not os.path.exists(f"./indexes/{index_name}"):
         print("Processing PDF files...")
         texts = process_folder(folder_path)
         print("Creating index...")
@@ -122,8 +118,8 @@ if __name__ == '__main__':
         print("Index already exists. Loading...")
 
     # Load the index and set up the QA system
-    document_search = load_index(index_name)
-    qa_system = setup_qa_system(document_search)
+    index = load_index(index_name)
+    qa_system = setup_qa_system(index)
 
     # Initialize the conversation history
     conversation_history = []
