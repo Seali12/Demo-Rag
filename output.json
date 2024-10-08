@@ -1,0 +1,642 @@
+[
+  {
+    "Nrodeorden": "1",
+    "Documento": "SOLICITUD Y AUTORIZACIÓN PARA REINCORPORACION DE OFICIALES Y SUBOFICIALES",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "El interesado",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "El interesado",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "PE 00-02-I (Art 75 a 81)"
+  },
+  {
+    "Nrodeorden": "1Bis",
+    "Documento": "SOLICITUD Y AUTORIZACIÓN PARA REINCORPORACION DE OFICIALES Y SUBOFICIALES",
+    "Oportunidad_de_Elevacion": "15 días después de ingresado el Expte al EMGE",
+    "Elemento_que_debe_elevarla": "Dpto Reg Inf",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "J Dpto Reg Inf",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 1"
+  },
+  {
+    "Nrodeorden": "2",
+    "Documento": "SOLICITUD DE CAMBIO DE ESCALAFON",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": " Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 2"
+  },
+  {
+    "Nrodeorden": "3",
+    "Documento": "SOLICITUD DE R ECLUTAMIENTO LOCAL DE MÉDICOS, ODONTÓ LO- GOS BIOQUÍMIC OS Y FARMACÉ U- TICOS",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "mediante MM  Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 3"
+  },
+  {
+    "Nrodeorden": "4",
+    "Documento": "SOLICITUD DE RECLUTAMIENTO LOCAL OFICIALES SCD.",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 3a"
+  },
+  {
+    "Nrodeorden": "5",
+    "Documento": "PROCEDIMIENTO O A SEGUIR PARA LA INCORPORACIÓN DE SUBOFCIALES BAQUEANO",
+    "Oportunidad_de_Elevacion": "Anualmente-30 Abril-30 Agosto",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica mediate MM ",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 4"
+  },
+  {
+    "Nrodeorden": "6",
+    "Documento": "PROCEDIMIENTO PARA BRINDAR APOYO DE RECLUTAMIENTO A LOS INSTITUTOS DE RECLUTAMIENTO",
+    "Oportunidad_de_Elevacion": "no-info",
+    "Elemento_que_debe_elevarla": "no-info",
+    "Procedimineto_de_elevacion": "no-info",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "no-info",
+    "Departamento_al_cual_debe_elevarse": "no-info",
+    "Disposicion_que_lo_ordena": "Apéndice 5"
+  },
+  {
+    "Nrodeorden": "7",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA ASCENSO EXTRAORDINARIO DE SUBOFICIALES",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Pl",
+    "Disposicion_que_lo_ordena": "Apéndice 6"
+  },
+  {
+    "Nrodeorden": "8",
+    "Documento": "ESTUDIOS EN EL AMBITO CIVIL",
+    "Oportunidad_de_Elevacion": "no-info",
+    "Elemento_que_debe_elevarla":"no-info",
+    "Procedimineto_de_elevacion": "no-info",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "no-info",
+    "Departamento_al_cual_debe_elevarse": "no-info",
+    "Disposicion_que_lo_ordena": "Apéndice 7"
+  },
+  {
+    "Nrodeorden": "9",
+    "Documento": "TRASLADO Y ASIGNACIÓN DE DESTINO A OFICIALES Y SUBOFICIALES",
+    "Oportunidad_de_Elevacion": "no-info",
+    "Elemento_que_debe_elevarla": "no-info",
+    "Procedimineto_de_elevacion": "Según Apéndice 8",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "no-info",
+    "Departamento_al_cual_debe_elevarse": "no-info",
+    "Disposicion_que_lo_ordena": "Apéndice 8"
+  },
+  {
+    "Nrodeorden": "10",
+    "Documento": "SOLICITUD DE CAMBIO DE DESTINO POR RAZONES PERSONALES O DE SALUD.",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Adm Pers Mil",
+    "Disposicion_que_lo_ordena": "Apéndice 9"
+  },
+  {
+    "Nrodeorden": "11",
+    "Documento": "SOLICITUD DE PERSONAL DE SUBOFICIALES PARA CUBRIR CARGOS EN EL EXTERIOR",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe del Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Adm Pers Mil (Div Ext)",
+    "Disposicion_que_lo_ordena": "RFP 30-04"
+  },
+  {
+    "Nrodeorden": "12",
+    "Documento": "ESTADO DE PERSONAL DE OFCIALES Y SUBOFICIALES QUE EGRESA DE LOS IIMM POR ORDEN DE MERITO",
+    "Oportunidad_de_Elevacion": "no-info",
+    "Elemento_que_debe_elevarla": "Institutos",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Director",
+    "Departamento_al_cual_debe_elevarse": "Dpto Adm Pers Mil (Div Arm y/o Div Esp y Ser)",
+    "Disposicion_que_lo_ordena": "no-info"
+  },
+  {
+    "Nrodeorden": "13",
+    "Documento": "FICHA INDIVIDUAL",
+    "Oportunidad_de_Elevacion": "Ultimo día hábil de Octubre de cada añ0",
+    "Elemento_que_debe_elevarla": "Institutos de Reclutamiento ",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "G1, Director o jefe",
+    "Departamento_al_cual_debe_elevarse": "Dpto Adm Pers Mil",
+    "Disposicion_que_lo_ordena": "Anexo 1"
+  },
+  {
+    "Nrodeorden": "14",
+    "Documento": "INFORME DE ACTUALIZACION DE FICHA INDIVIDUAL",
+    "Oportunidad_de_Elevacion": "EFICHA INDIVIDUAL Ultima semana de Marzo y Agosto de cada año",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "G1 ó S1 ",
+    "Departamento_al_cual_debe_elevarse": "Dpto Adm Pers Mil",
+    "Disposicion_que_lo_ordena": "Anexo 2"
+  },
+  {
+    "Nrodeorden": "15",
+    "Documento": "DOCUMENTO UNICO FUTURO INMEDIATO (D UFI)",
+    "Oportunidad_de_Elevacion": "---",
+    "Elemento_que_debe_elevarla": "---",
+    "Procedimineto_de_elevacion": "---",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "---",
+    "Departamento_al_cual_debe_elevarse": "---",
+    "Disposicion_que_lo_ordena": "Anexo 5"
+  },
+  {
+    "Nrodeorden": "16",
+    "Documento": "SOLICITUD DE BAJA VOLUNTARIA DEL PERSONAL MILITAR",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 10"
+  },
+  {
+    "Nrodeorden": "17",
+    "Documento": "SOLICITUD DE LICENCIA EXTRAORDINARIA DEL PERSONAL MILITAR",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 11"
+  },
+  {
+    "Nrodeorden": "18",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA SOLICITAR EL PASE A SITUACIÓN DE RETIRO o ROCEDIMIENTO A SEGUIR POR EL PERSONAL QUE PASA A SITUACIÓN DE RETIRO Y FIJA DOMICILIO FUERA DE LA GUARNICION.",
+    "Oportunidad_de_Elevacion": "A solicitud o Donde se produzca" ,
+    "Elemento_que_debe_elevarla": "Donde se produzca o Donde se produzca",
+    "Procedimineto_de_elevacion": "Vía jerárquica o Segun Apendice 12a",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe elemento o Segun Apendice 12a",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf o Segun Apendice 12a",
+    "Disposicion_que_lo_ordena": "Apendice 12 o Apendice 12a"
+  },
+  {
+    "Nrodeorden": "19",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA LA CONFECCION DEL DOCUMENTO DE ANTECEDENTES Y CALIFICACIÓN ANUAL (DACA)",
+    "Oportunidad_de_Elevacion": "Final: 30 Diciembre",
+    "Elemento_que_debe_elevarla": "Todos los elementos",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Según Apéndice 13.La elevación consolidada la efectúa el S1-G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 13"
+  },
+  {
+    "Nrodeorden": "20",
+    "Documento": "ELEVACIÓN DE DOCUMENTACIÓN DE PERSONAL MILITAR QUE DEBE SER CONSIDERADO POR LAS JJC",
+    "Oportunidad_de_Elevacion": "no-info",
+    "Elemento_que_debe_elevarla": "no-info",
+    "Procedimineto_de_elevacion": "no-info",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "La elevación consolidada la efectúa el S1-G1.",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "no-info"
+  },
+  {
+    "Nrodeorden": "21",
+    "Documento": "LEGAJO DE PERSONAL EGRESADO DE LOS INSTITUTOS DE RECLUTAMIENTO",
+    "Oportunidad_de_Elevacion": "Antes de los 30 días posteriores a su egreso",
+    "Elemento_que_debe_elevarla": "Institutos de Reclutamiento ",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "S1 ó G1 ",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "PE 00 - 02 - II Cap XXI Art(s) 337 a 340 y Cap XXII Art(s) 349 a 352"
+  },
+  {
+    "Nrodeorden": "22",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA INFORMAR CAMBIO DE ESTADO CIVIL",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Según Apéndice 14",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Apéndice 14 ",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 14"
+  },
+  {
+    "Nrodeorden": "23",
+    "Documento": "ACTAS, INFORMACIONES Y /O SUMARIOS POR ENFERMEDAD O ACCIDENTES",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Según Apéndice 15",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Según Apéndice 15",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 15"
+  },
+  {
+    "Nrodeorden": "24",
+    "Documento": "PROCEDIMIENTO PARA SOLICITAR AUTORIZACIÓN PARA VIAJAR AL EXTERIOR",
+    "Oportunidad_de_Elevacion": "Hasta 45 días: 15 días antes de la partida o Más de 45 días: 20 días antes de la partida.",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo mediante MM",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe elemento",
+    "Departamento_al_cual_debe_elevarse": "Ejecutivo: Cdo GUB o Dir Grl de la cual dependa.Informativo: Cdo inmediato superior del cual dependa.",
+    "Disposicion_que_lo_ordena": "Apéndice 16"
+  },
+  {
+    "Nrodeorden": "25",
+    "Documento": "PLANILLA RESUMEN PERSONAL QUE VIAJA A PAISES LIMÍTROFES POR EL TERMINO DE 48 Hs",
+    "Oportunidad_de_Elevacion": "Mensual",
+    "Elemento_que_debe_elevarla": "Jefe Guarnición",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe guarnición",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "RFP 70 - 01Art 11.016"
+  },
+  {
+    "Nrodeorden": "26",
+    "Documento": "DECLARACIÓN JURADA DE ANTECEDENTES DE FAMILIA",
+    "Oportunidad_de_Elevacion": "Según Apéndice 17 ",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Interesado. Eleva S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 17"
+  },
+  {
+    "Nrodeorden": "27",
+    "Documento": "DECLARACIONES JURADAS PATRIMONIALES INTEGRA",
+    "Oportunidad_de_Elevacion": "Según Apéndice 18 ",
+    "Elemento_que_debe_elevarla": "no-info",
+    "Procedimineto_de_elevacion": "no-info",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "no-info",
+    "Departamento_al_cual_debe_elevarse": "Dpto Reg Inf",
+    "Disposicion_que_lo_ordena": "Apéndice 17"
+  },
+  {
+    "Nrodeorden": "28",
+    "Documento": "DOCUMENTACIÓN DE FAMILIA QUE DEBE INTEGRAR LOS LEGAJOS ORIGINAL Y DUPLICADO DEL PE R- SONAL MIL ITAR",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "Apéndice 19  Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Interesado Eleva S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Reg"
+  },
+  {
+    "Nrodeorden": "29",
+    "Documento": "COPIA DE LA SENTENCIA DEFIN I- TIVA DE S UMARIOS DE PERSONAL MILITAR",
+    "Oportunidad_de_Elevacion": "Cuando se produzca",
+    "Elemento_que_debe_elevarla": "AJE",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "AJE",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Reg"
+  },
+  {
+    "Nrodeorden": "30",
+    "Documento": "INSCRIPCIÓN DE POSTULA NTES A INGRESAR A LA ESG, EST E II FFAA.",
+    "Oportunidad_de_Elevacion": "---",
+    "Elemento_que_debe_elevarla": "---",
+    "Procedimineto_de_elevacion": "---",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "---",
+    "Departamento_al_cual_debe_elevarse": "---",
+    "Disposicion_que_lo_ordena": "Apéndice"
+  },
+  {
+    "Nrodeorden": "31",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "SEGUIR",
+    "Procedimineto_de_elevacion": "CON",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "PERSONAL",
+    "Departamento_al_cual_debe_elevarse": "MILITAR",
+    "Disposicion_que_lo_ordena": "EN"
+  },
+  {
+    "Nrodeorden": "32",
+    "Documento": "NOTAS DE ENTERADO CON LA COMUNICACION DE ASCENSO POR PARTE DE LA JJCC",
+    "Oportunidad_de_Elevacion": "Cuando se produzca",
+    "Elemento_que_debe_elevarla": "El interesado",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "El interesado",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "JJCC"
+  },
+  {
+    "Nrodeorden": "268",
+    "Documento": "Nro",
+    "Oportunidad_de_Elevacion": "de",
+    "Elemento_que_debe_elevarla": "Orden",
+    "Procedimineto_de_elevacion": "DOCUMENTO",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "OPORTUNIDAD",
+    "Departamento_al_cual_debe_elevarse": "DE",
+    "Disposicion_que_lo_ordena": "ELEVACIÓN"
+  },
+  {
+    "Nrodeorden": "33",
+    "Documento": "SISTEMA DE JUNTAS DE CALIFIC A- CIÓN PARA OTORGAR ASCENSOS, PERMANENCIAS Y/O ELIMINACI O- NES DEL PERSONAL DE SUBOF I- CIALES",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "OEJEMGE (Fu n- cionamiento de las JJC) y PON (Normas y proced i- mientos de Evalu ación para el funcion amiento de las JJC) Juntas de Calific a- ción Region ales",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Comandante corre spondiente a cada Junta Regi onal",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "JJCC"
+  },
+  {
+    "Nrodeorden": "34",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "ESPECIAL",
+    "Elemento_que_debe_elevarla": "DE",
+    "Procedimineto_de_elevacion": "CALIFIC",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "A-",
+    "Departamento_al_cual_debe_elevarse": "CIONES",
+    "Disposicion_que_lo_ordena": "D"
+  },
+  {
+    "Nrodeorden": "35",
+    "Documento": "RECLAMOS",
+    "Oportunidad_de_Elevacion": "Y",
+    "Elemento_que_debe_elevarla": "RECURSOS",
+    "Procedimineto_de_elevacion": "A",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "solicitud",
+    "Departamento_al_cual_debe_elevarse": "Donde",
+    "Disposicion_que_lo_ordena": "se"
+  },
+  {
+    "Nrodeorden": "36",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "PARA",
+    "Elemento_que_debe_elevarla": "SOLICITAR",
+    "Procedimineto_de_elevacion": "NUMERACIÓN",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Y",
+    "Departamento_al_cual_debe_elevarse": "REGISTRO",
+    "Disposicion_que_lo_ordena": "PARA"
+  },
+  {
+    "Nrodeorden": "37",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "MEDICO",
+    "Elemento_que_debe_elevarla": "DE",
+    "Procedimineto_de_elevacion": "OFICIALES",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "SUPERIORES",
+    "Departamento_al_cual_debe_elevarse": "Y",
+    "Disposicion_que_lo_ordena": "JEFES"
+  },
+  {
+    "Nrodeorden": "38",
+    "Documento": "PROCEDIMIENTOS",
+    "Oportunidad_de_Elevacion": "PARA",
+    "Elemento_que_debe_elevarla": "LA",
+    "Procedimineto_de_elevacion": "TR",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "A-",
+    "Departamento_al_cual_debe_elevarse": "MITACIÓN",
+    "Disposicion_que_lo_ordena": "DE"
+  },
+  {
+    "Nrodeorden": "39",
+    "Documento": "NORMAS PARA SOLICITAR SUPL E- MENTOS PARTICULARES Y CO M- PENSACIONES",
+    "Oportunidad_de_Elevacion": "A solicitud",
+    "Elemento_que_debe_elevarla": "Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "(3)  S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Pl"
+  },
+  {
+    "Nrodeorden": "40",
+    "Documento": "DISPOSICIONES BASICAS Y CO M- PLEMENT ARIAS QUE RIGEN EN MATERIA DE CU RSOS EN EL P AIS",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "Apéndice 26",
+    "Procedimineto_de_elevacion": "Según",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "corresponda  Directo  S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Adm"
+  },
+  {
+    "Nrodeorden": "41",
+    "Documento": "ELEVACION",
+    "Oportunidad_de_Elevacion": "DE",
+    "Elemento_que_debe_elevarla": "LEGAJOS",
+    "Procedimineto_de_elevacion": "ORIGIN",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "A-",
+    "Departamento_al_cual_debe_elevarse": "LES",
+    "Disposicion_que_lo_ordena": "Y"
+  },
+  {
+    "Nrodeorden": "42",
+    "Documento": "NORMAS",
+    "Oportunidad_de_Elevacion": "PARA",
+    "Elemento_que_debe_elevarla": "EL",
+    "Procedimineto_de_elevacion": "SERVICIO",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "MIL",
+    "Departamento_al_cual_debe_elevarse": "I-",
+    "Disposicion_que_lo_ordena": "TAR"
+  },
+  {
+    "Nrodeorden": "43",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA PRODUCIR INFORME DE ESTADO DISCIPL INARIO",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "Apéndice 28",
+    "Procedimineto_de_elevacion": "Según",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Apéndice 28  Según Apéndice 28  Jefe Element o",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "RUEDE"
+  },
+  {
+    "Nrodeorden": "44",
+    "Documento": "NORMAS PARA LA INSCRIPCION Y SELECCIÓN DE PERSONAL INT E- GRANTE DE OOMMP Y OBSERV A- DORES MILITARES U OFICIALES DE ENLACE.",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "Apéndice 29  Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "por MM  Jefe Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Adm"
+  },
+  {
+    "Nrodeorden": "45",
+    "Documento": "SISTE MA DE INCORPORACIÓN AL SERVICIO MILITAR VOLUNTARIO DEL EJÉ RCITO SIGLO XXI.",
+    "Oportunidad_de_Elevacion": "---",
+    "Elemento_que_debe_elevarla": "---",
+    "Procedimineto_de_elevacion": "---",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "---",
+    "Departamento_al_cual_debe_elevarse": "---",
+    "Disposicion_que_lo_ordena": "Apéndice"
+  },
+  {
+    "Nrodeorden": "46",
+    "Documento": "DOCUMENTO",
+    "Oportunidad_de_Elevacion": "UNICO",
+    "Elemento_que_debe_elevarla": "PARA",
+    "Procedimineto_de_elevacion": "LA",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "I",
+    "Departamento_al_cual_debe_elevarse": "N-",
+    "Disposicion_que_lo_ordena": "CORPORACION"
+  },
+  {
+    "Nrodeorden": "47",
+    "Documento": "SOLICITUD",
+    "Oportunidad_de_Elevacion": "DE",
+    "Elemento_que_debe_elevarla": "ELIMINACION",
+    "Procedimineto_de_elevacion": "DE",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "PERSONAL",
+    "Departamento_al_cual_debe_elevarse": "POR",
+    "Disposicion_que_lo_ordena": "ANTECEDENTES"
+  },
+  {
+    "Nrodeorden": "48",
+    "Documento": "PROCEDIMIENTO A SEGUIR PARA SOLICITAR DISPENSA",
+    "Oportunidad_de_Elevacion": "Cuando se produzca",
+    "Elemento_que_debe_elevarla": "Donde se produzc a",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Jefe Elemento",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Pl"
+  },
+  {
+    "Nrodeorden": "49",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "PARA",
+    "Elemento_que_debe_elevarla": "LA",
+    "Procedimineto_de_elevacion": "INCO",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "R-",
+    "Departamento_al_cual_debe_elevarse": "PORACIÓN",
+    "Disposicion_que_lo_ordena": "DE"
+  },
+  {
+    "Nrodeorden": "50",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "PARA",
+    "Elemento_que_debe_elevarla": "IMPL",
+    "Procedimineto_de_elevacion": "E-",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "MENTAR",
+    "Departamento_al_cual_debe_elevarse": "LA",
+    "Disposicion_que_lo_ordena": "FIRMA"
+  },
+  {
+    "Nrodeorden": "51",
+    "Documento": "PROCEDIMIE",
+    "Oportunidad_de_Elevacion": "NTO",
+    "Elemento_que_debe_elevarla": "A",
+    "Procedimineto_de_elevacion": "SEGUIR",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "PARA",
+    "Departamento_al_cual_debe_elevarse": "PROCEDER",
+    "Disposicion_que_lo_ordena": "A"
+  },
+  {
+    "Nrodeorden": "52",
+    "Documento": "PERSONAL",
+    "Oportunidad_de_Elevacion": "DESIGNADO",
+    "Elemento_que_debe_elevarla": "COMO",
+    "Procedimineto_de_elevacion": "PROFESOR",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "MILITAR",
+    "Departamento_al_cual_debe_elevarse": "PERMANENTE,",
+    "Disposicion_que_lo_ordena": "NO"
+  },
+  {
+    "Nrodeorden": "53",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "SEGUIR",
+    "Procedimineto_de_elevacion": "PARA",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "SOLICITAR",
+    "Departamento_al_cual_debe_elevarse": "AUTORIZACIÓN",
+    "Disposicion_que_lo_ordena": "PARA"
+  },
+  {
+    "Nrodeorden": "54",
+    "Documento": "CONFECCIÓN",
+    "Oportunidad_de_Elevacion": "Y",
+    "Elemento_que_debe_elevarla": "ELEVACIÓN",
+    "Procedimineto_de_elevacion": "DEL",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "RESÚMEN",
+    "Departamento_al_cual_debe_elevarse": "DE",
+    "Disposicion_que_lo_ordena": "LEGAJO"
+  },
+  {
+    "Nrodeorden": "55",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "ELEVAR",
+    "Procedimineto_de_elevacion": "AL",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "REGI",
+    "Departamento_al_cual_debe_elevarse": "S-",
+    "Disposicion_que_lo_ordena": "TRO"
+  },
+  {
+    "Nrodeorden": "56",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "PRODUCIR",
+    "Procedimineto_de_elevacion": "E",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "N",
+    "Departamento_al_cual_debe_elevarse": "OPO",
+    "Disposicion_que_lo_ordena": "R-"
+  },
+  {
+    "Nrodeorden": "57",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "PRODUCIR",
+    "Procedimineto_de_elevacion": "CADA",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "VEZ",
+    "Departamento_al_cual_debe_elevarse": "QUE",
+    "Disposicion_que_lo_ordena": "SE"
+  },
+  {
+    "Nrodeorden": "58",
+    "Documento": "PROCEDIMIENTO",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "SEGUIR",
+    "Procedimineto_de_elevacion": "UNA",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "VEZ",
+    "Departamento_al_cual_debe_elevarse": "IMPUESTA",
+    "Disposicion_que_lo_ordena": "LA"
+  },
+  {
+    "Nrodeorden": "59",
+    "Documento": "INFORME",
+    "Oportunidad_de_Elevacion": "A",
+    "Elemento_que_debe_elevarla": "ELEVAR",
+    "Procedimineto_de_elevacion": "A",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "LA",
+    "Departamento_al_cual_debe_elevarse": "D",
+    "Disposicion_que_lo_ordena": "I-"
+  },
+  {
+    "Nrodeorden": "60",
+    "Documento": "FICHA DE REGISTRO INDIVIDUAL",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "Apéndice 45  Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Eleva S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Reg"
+  },
+  {
+    "Nrodeorden": "61",
+    "Documento": "INFORME DE ACTUALIZACIÓN DE FICHA DE REGISTRO INDIVIDUAL",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "ANEXO 2  Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "Eleva S1 ó G1",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "Reg"
+  },
+  {
+    "Nrodeorden": "62",
+    "Documento": "DOCUMENTO ÚNICO DE FUTURO INMEDIATO",
+    "Oportunidad_de_Elevacion": "Según",
+    "Elemento_que_debe_elevarla": "ANEXO 5  Donde se produzca",
+    "Procedimineto_de_elevacion": "Directo",
+    "Autoridad_que_debe_firmar_o_elevar_el_documento": "J Elem",
+    "Departamento_al_cual_debe_elevarse": "Dpto",
+    "Disposicion_que_lo_ordena": "APM"
+  }
+]
