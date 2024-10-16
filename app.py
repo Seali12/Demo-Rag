@@ -36,31 +36,67 @@ def process_pdf(pdf_path):
         print(f"An unexpected error occurred with {pdf_path}: {str(e)}. Skipping.")
         return ""
 
+def process_txt(txt_path):
+    try:
+        with open(txt_path, 'r', encoding='utf-8') as file:
+            texto_crudo = ''
+            for line in file:
+                # Try different encodings if needed
+                for encoding in ['utf-8', 'latin-1', 'iso-8859-1']:
+                    try:
+                        texto_crudo += line.encode(encoding).decode('utf-8')
+                        break
+                    except UnicodeDecodeError:
+                        continue
+        return texto_crudo
+    except FileNotFoundError:
+        print(f"Warning: {txt_path} does not exist. Skipping.")
+        return ""
+    except Exception as e:
+        print(f"An unexpected error occurred with {txt_path}: {str(e)}. Skipping.")
+        return ""
+
+
+
+# def process_folder(folder_path):
+#     all_text = ""
+#     for root,dirs, files in os.walk(folder_path):
+#         for file in files:
+#             if file.endswith('.pdf'):
+#                 pdf_path = os.path.join(root, file)
+#                 print(f"Procesando: {pdf_path}")
+#                 file_content = process_pdf(pdf_path)
+#                 if file_content:
+#                     all_text += file_content + "\n\n"
+            
 def process_folder(folder_path):
     all_text = ""
     for root,dirs, files in os.walk(folder_path):
         for file in files:
-            if file.endswith('.pdf'):
+            if file.endswith('.txt'):
                 pdf_path = os.path.join(root, file)
                 print(f"Procesando: {pdf_path}")
-                file_content = process_pdf(pdf_path)
+                file_content = process_txt(pdf_path)
                 if file_content:
                     all_text += file_content + "\n\n"
-    
+                
+
+
     if not all_text:
         raise ValueError("No valid PDF content found in the specified folder.")
     
     text_splitter = CharacterTextSplitter(
         separator="\n",
-        chunk_size=400, #pruebo un valor mas alto
-        chunk_overlap=100,
+        chunk_size=400, # 400
+        chunk_overlap=100,# 100
         length_function=len,
     )
+    print(text_splitter)
     return text_splitter.split_text(all_text)
 
 
 
-def create_and_save_index(texts, index_name):
+def create_and_save_index(texts, index_name):#probar otro embedding on mas tokens
     embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2" ) #max_seq_length=512
     document_search = FAISS.from_texts(texts, embeddings)
     
@@ -118,7 +154,7 @@ def ask_question(qa_system, question):
 
 ### Paso 5: Configuración principal ###
 def main():
-    folder_path = 'ArchivosDemo'  # Reemplaza esto con la ruta a tu carpeta de PDFs
+    folder_path = 'ArchivosDemotxt'  # Reemplaza esto con la ruta a tu carpeta de PDFs
     index_name = 'archivos_procesados'
 
     # Verificar si el índice ya existe
@@ -220,3 +256,57 @@ if __name__ == "__main__":
 # Es importante destacar que en este contexto, no hay información adicional necesaria para responder completamente a esta pregunta.
 
 
+#se confuncde baja con reincorporacion
+
+
+
+#  me quiero dar de baja voluntaria, que tengo que hacer?
+
+# Entiendo que deseas darte de baja voluntariamente. Para proceder con la solicitud, te diré lo siguiente:
+
+# De acuerdo al contexto proporcionado, no hay un procedimiento específico mencionado para dar de baja voluntariamente.
+# Sin embargo, como se refiere a "Solicitud de Permuta" en el párrafo segundo, asumo que la solicitud de baja voluntaria 
+# se realizará a través del sistema de Declaración Jurada (DUFI) y electrónico (EE), similar al procedimiento para revalidar un expediente.
+
+# **Responsabilidades**
+
+# 1. Como causante, debes:
+#         * Realizar una Declaración Jurada en el DUFI y EE, indicando tus intenciones de darse de baja voluntariamente.
+#         * Responsabilidad del Jefe del Elemento: verificar la situación y aprobar o desaprobar la solicitud.
+
+# **Recomendación**
+
+# Antes de realizar la solicitud, es importante que revisen las normas y procedimientos aplicables a su caso específico.
+# Como asistente virtual especializado en documentos REDOAPE relacionados con el Ejército Argentino, puedo recomendar que
+# consulten directamente con un oficial o funcionario competente para obtener orientación y guía sobre el proceso de solicitud de baja voluntaria.
+
+# **Nota**
+
+# Es importante mencionar que, según el contexto proporcionado, no hay un plazo específico mencionado para darse de baja voluntariamente.
+# Sin embargo, es recomendable realizar la solicitud lo antes posible para evitar posibles problemas administrativos o legales.
+
+# Haz una pregunta sobre los documentos: salir
+# ¡Gracias por usar el sistema de preguntas y respuestas!
+
+
+
+
+#con txt
+# Haz una pregunta sobre los documentos: cual es el procedimiento para otorgar autorizacion para rei
+
+
+# Respuesta: La respuesta al procedimiento para otorgar autorización para reincorporar a un oficial
+# TORGAR AUTORIZACIÓN PARA REINCORPORACIÓN DE PERSONAL DE OFICIALES Y SUBOFICIALES.
+
+# Según este procedimiento, el personal de Oficiales/Suboficiales que haya sido dado de baja a su sompre y cuando
+# lo haga antes de transcurridos dos años desde la fecha de su baja (punto 2.a).
+
+# Además, el causante deberá someterse a un reconocimiento médico (punto 2.a). El procedimiento no ente su solicitud
+# y se somete al reconocimiento médico.
+
+# Sin embargo, en el punto 3), se menciona que con la resolución adoptada por el Director de Persona
+# Es posible que este sea el siguiente paso después de la solicitud y el reconocimiento médico.
+
+# En resumen, el procedimiento para otorgar autorización para reincorporar a un oficial implica presentar la solicitud antes 
+# de transcurridos dos años desde la fecha de su baja y someterse a un reconocimiento médico. Luego, se remite el expediente 
+# al Dpto Reg e Inf para posteriores trámites con la resolución adoptada por el Director de Personal Militar.
