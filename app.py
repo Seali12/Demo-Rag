@@ -10,34 +10,8 @@ from langchain.prompts import PromptTemplate
 from PyPDF2.errors import EmptyFileError, PdfReadError
 import os
 from multiprocessing import Pool, cpu_count
-# from flask import Flask, request, jsonify
-# from flask_cors import CORS
+
 load_dotenv() #ejecuta lo q esta en env
-
-# app = Flask(__name__)
-# CORS(app)
-
-# @app.route('/api/ask', methods=['POST'])
-# def ask_question_api():
-#     try:
-#         question = request.json.get('question')
-#         if not question:
-#             return jsonify({'error': 'No question provided'}), 400
-
-#         # Usar tu sistema QA existente
-#         document_search = load_index('archivos_procesados')
-#         qa_system = setup_qa_system(document_search)
-#         answer, sources = ask_question(qa_system, question)
-
-#         return jsonify({
-#             'answer': answer,
-#             'sources': [str(source) for source in sources]
-#         })
-#     except Exception as e:
-#         return jsonify({'error': str(e)}), 500
-
-
-
 
 def process_pdf(pdf_path):
     try:
@@ -141,7 +115,6 @@ def load_index(index_name):                                                     
 def setup_qa_system(index):
 
     llm = OllamaLLM(model="llama3",temperature=0.1)
-    #probar ponerle que es de recursos humanos
     prompt_template = """Eres un asistente virtual especializado en los documentos DACA relacionados con el Ejército Argentino. 
     Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
 
@@ -216,8 +189,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-# if __name__ == '__main__':
-#     app.run(debug=True, port=5000)
+
 
 
 

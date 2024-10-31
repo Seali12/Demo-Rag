@@ -51,7 +51,7 @@ st.markdown("""
 # Inicialización de la sesión
 if 'messages' not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "¡Hola! Soy tu asistente virtual especializado en documentos REDOAPE del Ejército Argentino. ¿En qué puedo ayudarte?"}
+        {"role": "assistant", "content": "¡Hola! Soy tu asistente virtual especializado en documentos DACA del Ejército Argentino. ¿En qué puedo ayudarte?"}
     ]
 
 if 'qa_system' not in st.session_state:
@@ -63,11 +63,11 @@ def load_qa_system():
         with st.spinner('Cargando el sistema...'):
             # Cargar el índice
             embeddings = HuggingFaceInstructEmbeddings(
-                model_name="sentence-transformers/all-MiniLM-L6-v2",
-                model_kwargs={"device": "cpu"}
+                model_name="sentence-transformers/all-MiniLM-L6-v2", 
+                model_kwargs={"device": "cpu"} # con una gpu cambiar por cuda, bajar de pytorch
             )
             document_search = FAISS.load_local(
-                "faiss_indexes/archivos_procesados",
+                "faiss_indexes/archivos_procesados", # aca ver como hacer para que sino tiene el indice lo cree
                 embeddings,
                 allow_dangerous_deserialization=True
             )
