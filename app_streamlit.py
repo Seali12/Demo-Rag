@@ -64,7 +64,7 @@ def load_qa_system():
             # Cargar el índice
             embeddings = HuggingFaceInstructEmbeddings(
                 model_name="sentence-transformers/all-MiniLM-L6-v2", 
-                model_kwargs={"device": "cpu"} # con una gpu cambiar por cuda, bajar de pytorch
+                model_kwargs={"device": "cuda"} # con una gpu cambiar por cuda, bajar de pytorch
             )
             document_search = FAISS.load_local(
                 "faiss_indexes/archivos_procesados", # aca ver como hacer para que sino tiene el indice lo cree

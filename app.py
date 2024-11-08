@@ -1,5 +1,6 @@
 from PyPDF2 import PdfReader
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+#from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS 
 from dotenv import load_dotenv
@@ -99,7 +100,16 @@ def process_folder(folder_path):
 
 
 def create_and_save_index(texts, index_name):#probar otro embedding on mas tokens
-    embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2" ) #max_seq_length=512
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2" ) #max_seq_length=512
+    # model_name = "sentence-transformers/all-MiniLM-L6-v2"
+    # model_kwargs = {'device': 'cuda'}
+    # encode_kwargs = {'normalize_embeddings': False}
+    # embeddings = HuggingFaceEmbeddings(
+    #     model_name=model_name,
+    #     model_kwargs=model_kwargs,
+    #     encode_kwargs=encode_kwargs
+    # )
+    
     document_search = FAISS.from_texts(texts, embeddings)
     
     os.makedirs("faiss_indexes", exist_ok=True)
@@ -108,7 +118,17 @@ def create_and_save_index(texts, index_name):#probar otro embedding on mas token
     print(f"Índice guardado como {index_name}")
 
 def load_index(index_name):                                                                         # aca decia cpu
-    embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": "cpu"} )#max_seq_length=512
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": "cuda"} )#max_seq_length=512
+    # model_name = "sentence-transformers/all-MiniLM-L6-v2"
+    # model_kwargs = {'device': 'cuda'}
+    # encode_kwargs = {'normalize_embeddings': False}
+    # embeddings = HuggingFaceEmbeddings(
+    #     model_name=model_name,
+    #     model_kwargs=model_kwargs,
+    #     encode_kwargs=encode_kwargs
+    # )
+    
+    
     return FAISS.load_local(f"faiss_indexes/{index_name}", embeddings,allow_dangerous_deserialization=True)
 
 
