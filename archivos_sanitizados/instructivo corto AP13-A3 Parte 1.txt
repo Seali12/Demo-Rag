@@ -108,6 +108,123 @@ N. Relación entre “Rendimiento en el Servicio” y “Cualidades Personales y
 N.1 Parámetros de evaluación:
    - Los evaluadores deben tener como parámetro principal que cumplir con las expectativas se considera normal. Calificaciones superiores o inferiores requieren una justificación especial escrita.
 
+O. Calificación conceptual en el Informe de Calificación. Diferenciación de los DACA(s) según las distintas jerarquías
+O.1 Propósitos de la calificación conceptual:
+   - Lograr que el calificador efectúe una evaluación meditada y justa del evaluado.
+   - Hacer conocer al evaluado la opinión del calificador sobre su rendimiento en el período considerado y sus cualidades personales y profesionales.
+   - Proporcionar información clara y de calidad para facilitar a las juntas de calificación la comparación y asignación de un orden de mérito justo.
+
+O.2 Particularidades de la calificación conceptual y numérica:
+   - Oficiales superiores: Evaluación completamente conceptual.
+   - Oficiales jefes, subalternos y suboficiales:
+   - Calificación numérica de todas las instancias y una síntesis conceptual final de una sola instancia.
+
+O.3 Criterios específicos de evaluación:
+   - Supera las expectativas:
+      - Se asigna solo cuando el evaluado supera notablemente las exigencias o cualidades requeridas para su jerarquía.
+      - Requiere una justificación escrita con detalles claros y concretos que respalden la calificación.
+      - Calificación numérica: 100 puntos.
+   - Normal:
+      - Incluye a quienes cumplen con los objetivos requeridos, aunque con diferentes grados de excelencia.
+      - No requiere justificación especial.
+      - Calificación numérica: entre 70 y 95 puntos, en múltiplos de 5 (70, 75, 80, 85, 90, 95).
+   - Regular:
+      - Para quienes no alcanzan completamente los objetivos, sin que esto signifique un fracaso total.
+      - No requiere justificación especial.
+      - Calificación numérica: entre 40 y 65 puntos, en múltiplos de 5.
+   - No satisface:
+      - Para aquellos que no cumplen con los objetivos mínimos o carecen de las cualidades requeridas para su jerarquía.
+      - Refleja conductas de desidia, falta de compromiso o mediocridad.
+      - Requiere una justificación escrita detallada.
+      - Calificación numérica: entre 0 y 35 puntos, en múltiplos de 5.
+
+P. Aspectos a tener en cuenta en el proceso de calificación:
+P.1 Directrices para los calificadores:
+   - El DACA tiene como objetivo reflejar el rendimiento y cualidades del evaluado de forma clara, completa y sin ambigüedades.
+   - El calificador debe emitir un juicio ajustado a los requerimientos del puesto y libre de generalidades, contribuyendo así a la comprensión y aceptación de la calificación asignada.
+   - Los calificadores deben actuar con sentido de justicia y compromiso con el Ejército, conscientes de que sus evaluaciones influyen en la carrera del evaluado y en el bienestar institucional.
+
+P.2 Consecuencias de una calificación incorrecta:
+   - Una calificación errónea o incompleta dificulta la apreciación precisa de la personalidad y competencias del evaluado, afectando el orden de mérito y el proceso de ascensos.
+   - Una calificación incorrecta puede perjudicar o beneficiar indebidamente al evaluado y comprometer la justicia del proceso de promoción en el Ejército.
+
+Q. Responsabilidades de comando en el proceso de calificación:
+   - La calificación refleja la justicia, responsabilidad y respeto a la Institución Militar que posee el calificador.
+   - Debido a su impacto en las decisiones de ascenso o retiro, el calificador debe considerar si el evaluado ha sido justo y objetivo en sus propias evaluaciones como superior.
+   - En caso de errores o negligencias que puedan afectar al evaluado, el superior debe asumir la responsabilidad de corregir y, si es necesario, sancionar al evaluador responsable.
+   - Las calificaciones infundadas constituyen un antecedente desfavorable para el propio calificador, y los superiores inmediatos deben corregir o sancionar estas situaciones.
+
+R. Procedimiento de llenado del DACA:
+   - El ejemplar original debe ser completado a mano. El duplicado se llenará a máquina y debe ser una copia fiel del original.
+   - El responsable de personal en la organización supervisará que ambos ejemplares sean correctos, coincidentes y cumplan con las prescripciones establecidas.
+   - Cada evaluado debe verificar la exactitud de los datos en el DACA antes de firmar el correspondiente enterado.
+
+
+
+S. Guía para confeccionar los Documentos de Antecedentes y Calificación Anual (DACA)
+S.1 Consideraciones generales:
+   - Todos los rubros deben llenarse con datos correspondientes exclusivamente al período que abarca el DACA.
+   - Los datos deben consignarse utilizando la abreviatura reglamentaria establecida.
+S.2 Encabezamiento:
+   - El encabezado debe incluir:
+   - Etiqueta de confidencialidad: “CONFIDENCIAL”
+   - Identificación: "EJÉRCITO ARGENTINO" seguido del año de emisión.
+   - Título del documento: "Anexo 14 - Documento de Antecedentes y Calificación Anual (DACA)"
+   - Tipo de evaluado: Oficiales superiores
+   - Período de evaluación: con las fechas Desde: y Hasta: correspondientes.
+
+S.3 Tipos de formularios del DACA según jerarquía:
+   - Existen cuatro tipos de formularios del DACA, organizados según la jerarquía a calificar:
+      - Oficial superior
+      - Oficial jefe
+      - Oficial subalterno
+      - Suboficial superior
+S.4 Sello de originalidad:
+   - En cada ejemplar correspondiente, debe insertarse el sello de ORIGINAL o DUPLICADO para identificar la copia.
+S.5 Rubro “Período”:
+   - Debe consignarse con letra tipo imprenta, en mayúsculas.
+   - Indicar la fecha de apertura y cierre del informe, conforme a lo ordenado en cada caso.
+
+T. Sección “Antecedentes”:
+T.1 Formato y estilo de escritura:
+   - Los datos deben anotarse en letra tipo imprenta minúscula.
+   - El apellido del evaluado y las siglas específicas se escribirán en mayúsculas.
+   - Otras siglas llevarán solo la primera letra en mayúscula.
+   -Formato de la tabla con ejemplos:
+                                    Grado;Arma;Titulo;Aptitudes
+                                    SI, SP,CT;A,I,C;OEM,OIM;Parac,Mte
+
+U. Guía para completar el rubro “Alta, Baja o Retiro” y “Ascenso”
+U.1 Rubro “Alta, Baja o Retiro”:
+   - Este rubro debe llenarse únicamente cuando se produzca un cambio en el estado del causante (alta, baja, o retiro).
+   - Debe consignarse el boletín militar correspondiente, que acredita oficialmente la situación.
+
+U.2 Rubro “Ascenso”:
+   - Se anotará siempre el último ascenso al grado actual.
+   - En caso de ascenso a un grado inmediato superior durante el período del informe, se debe incluir el cambio.
+   - Información a consignar:
+      - Grado alcanzado (ej: Subteniente, Sargento 1ro, etc.).
+      - Número de boletín militar que certifica el ascenso.
+      - Fecha de publicación del ascenso.
+
+V. Guía para Completar los Rubros de Condecoraciones, Títulos, Situación de Revista y Comisiones Ordenadas
+V.1 Rubro “Condecoraciones y Distinciones”
+   - Anotar las condecoraciones y distinciones obtenidas durante el período del informe, conforme al RFP 30-01 (Reconocimientos Honoríficos).
+   - Para distinciones no contempladas en el reglamento (ej.: condecoraciones extranjeras), incluir documentación probatoria en el rubro “Documentos Agregados”.
+
+V.2 Rubro “Título – Aptitud – Denominación”
+   - Incluir en “Documentos Agregados” el documento acreditativo del título, aptitud o especialización, siempre que esté reconocido oficialmente por la Fuerza en el boletín militar. Sin esta publicación, el título carece de validez.
+   - En caso de pérdida de títulos o especialización, dejar constancia en el rubro “Texto a Corregir - Agregar o Aclarar”, añadiendo documentación probatoria.
+
+V.3 Rubro “Situación de Revista”
+   - Indicar el estado correspondiente: Servicio Efectivo, Disponibilidad o Pasiva.
+
+V.4 Rubro “Comisiones Ordenadas” (Mayores a 10 días)
+   - Registrar todas las comisiones de más de diez días, con respaldo en la orden del día.
+   - Contabilizar el tiempo desde la salida del elemento de revista hasta el regreso, considerando cualquier hora de salida y regreso como días completos.
+   - Excluir en este rubro cursos, operaciones o ejercitaciones, los cuales deben anotarse en sus respectivos espacios.
+   
+
 
 W. Guía para Completar los Rubros de Operaciones, Ejercitaciones, Exigencias de Tiro, Inspecciones y Licencia
 W.1 Rubro “Operaciones – Ejercitaciones en el Terreno”
