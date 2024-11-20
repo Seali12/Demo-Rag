@@ -1,7 +1,7 @@
 # app_streamlit.py
 import streamlit as st
 from PyPDF2 import PdfReader
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS 
 from langchain_ollama import OllamaLLM
@@ -62,7 +62,7 @@ def load_qa_system():
     if st.session_state.qa_system is None:
         with st.spinner('Cargando el sistema...'):
             # Cargar el índice
-            embeddings = HuggingFaceInstructEmbeddings(
+            embeddings = HuggingFaceEmbeddings(
                 model_name="sentence-transformers/all-MiniLM-L6-v2", 
                 model_kwargs={"device": "cpu"} # con una gpu cambiar por cuda, bajar de pytorch
             )
@@ -74,23 +74,22 @@ def load_qa_system():
 
             # Configurar el LLM y el prompt
             llm = OllamaLLM(model="llama3",temperature=0.1)
-            prompt_template = """Eres un asistente virtual especializado en los documentos REDOAPE relacionados con el Ejército Argentino. 
-            Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
+            prompt_template = """Eres un asistente virtual especializado en los documentos DACA relacionados con el Ejército Argentino. 
+                Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
 
-            Instrucciones:
-            1. Responde siempre en español
-            2.  No inventes ni asumas información adicional.
-            3. Si la información en el contexto es insuficiente para responder completamente, indica claramente qué información adicional sería necesaria.
-            4. Si encuentras información contradictoria en el contexto, señálalo en tu respuesta y explica las discrepancias.
-            5. Organiza tu respuesta de manera clara y estructurada, utilizando viñetas o numeración si es necesario para mejorar la legibilidad.
+                    Instrucciones:
+                    1. Responde siempre en español
+                    2. No inventes ni asumas información adicional.
+                    3. Si la información en el contexto es insuficiente para responder completamente, indica claramente qué información adicional sería necesaria.
+                    4. Organiza tu respuesta de manera clara y estructurada, utilizando viñetas o numeración si es necesario para mejorar la legibilidad.
 
-            Contexto proporcionado:
-            {context}
+                    Contexto proporcionado:
+                    {context}
 
-            Pregunta del usuario: {question}
+                    Pregunta del usuario: {question}
 
-            Respuesta detallada y concisa:
-            """
+                    Respuesta detallada y concisa:
+                    """
             
             PROMPT = PromptTemplate(
                 template=prompt_template,
@@ -101,7 +100,7 @@ def load_qa_system():
             st.session_state.qa_system = RetrievalQA.from_chain_type(
                 llm=llm,
                 chain_type="stuff",
-                retriever=document_search.as_retriever(search_kwargs={"k": 3}),
+                retriever=document_search.as_retriever(search_kwargs={"k": 10}),
                 return_source_documents=True,
                 chain_type_kwargs={"prompt": PROMPT}
             )
