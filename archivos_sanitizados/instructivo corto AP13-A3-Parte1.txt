@@ -1,4 +1,4 @@
-DACA: Documento de Antecedentes y Calificación Anual
+Documento de Antecedentes y Calificación Anual (DACA) - Resumen Instructivo
 
 A Objetivos del DACA
 A.1 Evaluación del desempeño anual: Permite evaluar el desempeño del personal en su puesto a lo largo de un año.
@@ -35,6 +35,7 @@ D.2 Calificación en cambios de destino:
    - Cambio después de 9 meses: Unidad de origen califica en 1ª y 2ª instancia y envía sin cerrar; unidad de destino califica en 3ª instancia y cierra el DACA.
 
 E Comisiones del Servicio
+
 E.1 Comisiones dentro de la Fuerza:
    - Para comisiones menores de 2 meses, se usa Anexo 14c.
    - Para comisiones entre 2 y 6 meses, se usa Anexo 14b.
@@ -118,7 +119,6 @@ O.2 Particularidades de la calificación conceptual y numérica:
    - Oficiales superiores: Evaluación completamente conceptual.
    - Oficiales jefes, subalternos y suboficiales:
    - Calificación numérica de todas las instancias y una síntesis conceptual final de una sola instancia.
-
 O.3 Criterios específicos de evaluación:
    - Supera las expectativas:
       - Se asigna solo cuando el evaluado supera notablemente las exigencias o cualidades requeridas para su jerarquía.
@@ -139,6 +139,7 @@ O.3 Criterios específicos de evaluación:
       - Calificación numérica: entre 0 y 35 puntos, en múltiplos de 5.
 
 P. Aspectos a tener en cuenta en el proceso de calificación:
+
 P.1 Directrices para los calificadores:
    - El DACA tiene como objetivo reflejar el rendimiento y cualidades del evaluado de forma clara, completa y sin ambigüedades.
    - El calificador debe emitir un juicio ajustado a los requerimientos del puesto y libre de generalidades, contribuyendo así a la comprensión y aceptación de la calificación asignada.
@@ -159,9 +160,8 @@ R. Procedimiento de llenado del DACA:
    - El responsable de personal en la organización supervisará que ambos ejemplares sean correctos, coincidentes y cumplan con las prescripciones establecidas.
    - Cada evaluado debe verificar la exactitud de los datos en el DACA antes de firmar el correspondiente enterado.
 
-
-
 S. Guía para confeccionar los Documentos de Antecedentes y Calificación Anual (DACA)
+
 S.1 Consideraciones generales:
    - Todos los rubros deben llenarse con datos correspondientes exclusivamente al período que abarca el DACA.
    - Los datos deben consignarse utilizando la abreviatura reglamentaria establecida.
@@ -175,10 +175,10 @@ S.2 Encabezamiento:
 
 S.3 Tipos de formularios del DACA según jerarquía:
    - Existen cuatro tipos de formularios del DACA, organizados según la jerarquía a calificar:
-      - Oficial superior
-      - Oficial jefe
-      - Oficial subalterno
-      - Suboficial superior
+   - Oficial superior
+   - Oficial jefe
+   - Oficial subalterno
+   - Suboficial superior
 S.4 Sello de originalidad:
    - En cada ejemplar correspondiente, debe insertarse el sello de ORIGINAL o DUPLICADO para identificar la copia.
 S.5 Rubro “Período”:
@@ -195,6 +195,7 @@ T.1 Formato y estilo de escritura:
                                     SI, SP,CT;A,I,C;OEM,OIM;Parac,Mte
 
 U. Guía para completar el rubro “Alta, Baja o Retiro” y “Ascenso”
+
 U.1 Rubro “Alta, Baja o Retiro”:
    - Este rubro debe llenarse únicamente cuando se produzca un cambio en el estado del causante (alta, baja, o retiro).
    - Debe consignarse el boletín militar correspondiente, que acredita oficialmente la situación.
@@ -203,10 +204,12 @@ U.2 Rubro “Ascenso”:
    - Se anotará siempre el último ascenso al grado actual.
    - En caso de ascenso a un grado inmediato superior durante el período del informe, se debe incluir el cambio.
    - Información a consignar:
-      - Grado alcanzado (ej: Subteniente, Sargento 1ro, etc.).
-      - Número de boletín militar que certifica el ascenso.
-      - Fecha de publicación del ascenso.
-
+   - Grado alcanzado (ej.: Subteniente, Sargento 1ro, etc.).
+   - Número de boletín militar que certifica el ascenso.
+   - Fecha de publicación del ascenso.
+   - Ejemplo de las columnas de la tabla:  Alta-Baja-Retiro;Fecha;BM;Ascenso;Fecha;BM
+   
+   
 V. Guía para Completar los Rubros de Condecoraciones, Títulos, Situación de Revista y Comisiones Ordenadas
 V.1 Rubro “Condecoraciones y Distinciones”
    - Anotar las condecoraciones y distinciones obtenidas durante el período del informe, conforme al RFP 30-01 (Reconocimientos Honoríficos).
@@ -224,22 +227,115 @@ V.4 Rubro “Comisiones Ordenadas” (Mayores a 10 días)
    - Contabilizar el tiempo desde la salida del elemento de revista hasta el regreso, considerando cualquier hora de salida y regreso como días completos.
    - Excluir en este rubro cursos, operaciones o ejercitaciones, los cuales deben anotarse en sus respectivos espacios.
    
+   X. Guía para Completar los Rubros de Cursos, Estudios e Idiomas en el DACA
+X.1 Rubro “Curso – Denominación”
+
+   - Cursos a Asentar:
+      - Registrar los cursos realizados por el causante que cuenten con:
+      - Publicación en boletín militar.
+      - Certificados oficiales.
+      - Orden del día del organismo donde se realizó el curso.
+   - Cursos No a Asentar:
+      - No se registrarán cursos de posgrado realizados por el causante.
+
+X.2 Rubro “Estudios”
+   - Requisitos para Registrar Estudios:
+      - Los estudios deben contar con la documentación correspondiente.
+      - La documentación debe ser agregada al legajo original y al duplicado del causante.
+   - Estudios Civiles Finalizados:
+   - Asentar los siguientes datos:
+      - Título obtenido.
+   - Centro de estudios donde se realizaron los estudios.
+
+X.3 Rubro “Idiomas”
+   - Requisitos para Registrar Idiomas:
+      - Consignar el idioma correspondiente si ha sido acreditado durante el período cubierto por el DACA y ante la Escuela de Idiomas del Ejército Argentino.
+   - Nivel Otorgado:
+      - El nivel de idioma otorgado debe estar respaldado por documentación.
+      - Esta documentación debe ser agregada al legajo original y al duplicado del causante.
 
 
-W. Guía para Completar los Rubros de Operaciones, Ejercitaciones, Exigencias de Tiro, Inspecciones y Licencia
-W.1 Rubro “Operaciones – Ejercitaciones en el Terreno”
-   - Anotar todas las operaciones en las que haya participado el causante, incluyendo:
-   - Fecha de salida del elemento.
-   - Duración de la operación.
-   - Ubicación geográfica.
-   - Cargo ocupado. En caso de ser agregado a otro elemento, indicar el elemento y el cargo (ej.: RI Mec 24/J Ca C).
-   - Anotar las ejercitaciones en el terreno de más de dos días de duración en las que haya participado, con respaldo en la orden del día correspondiente.
 
-W.2 Rubro “Exigencias de Tiro”
-   - Registrar únicamente las pruebas de tiro anuales obligatorias que el personal de cuadros debe cumplir según las órdenes vigentes para las distintas jerarquías. Excluir las pruebas rendidas para las exigencias físicas.
+Y. Rubro Sanciones Disciplinarias
+Y.1 Registro de sanciones
+   - Se asentará la totalidad de las sanciones disciplinarias con los días correspondientes a cada una.
+   - Se debe transcribir la causa de cada sanción, sin omitir ningún aspecto relevante.
 
-W.3 Rubro “Inspecciones – Comprobaciones”
-   - Anotar únicamente comprobaciones físicas extraordinarias. No deben registrarse en este rubro como antecedente en el DACA.
+Y.2 Suplemento adicional
+   - En caso de ser necesario, se podrá agregar un suplemento para detallar información adicional sobre la sanción.
+   - Este suplemento deberá ser adherido en el espacio correspondiente del legajo.
 
-W.4 Rubro “Licencia”
-   - Registrar todas las licencias otorgadas, excepto las licencias por enfermedad, las cuales se consignarán en el rubro “Partes de Enfermo”.
+Y.3 Total de sanciones acumuladas
+   - En el campo TOTAL, se deberá registrar la suma (en días) de las sanciones disciplinarias acumuladas por el causante durante el período correspondiente.
+
+Y.4 Modificación o anulación de sanciones
+   - Ningún superior podrá modificar o dejar sin efecto una sanción disciplinaria impuesta a un subalterno, salvo que:
+   - Exista una sentencia judicial que lo disponga.
+   - Se haya producido una intervención de oficio.
+   - Se haya presentado un recurso formal dentro de los plazos estipulados en:
+   - El Nuevo Código de Disciplina de las Fuerzas Armadas.
+   - El Régimen de Actuaciones Disciplinarias del Ejército.
+
+Z. Rubro Partes de Enfermo
+
+Z.1 Registro de partes de enfermo
+   - Registrar todos los partes de enfermo con la duración correspondiente de cada uno.
+   - En el casillero Observaciones, especificar si el parte de enfermo fue consecuencia de un acto del servicio o no, utilizando las leyendas en letra de imprenta:
+   - SIRAS: Si relacionado con actos del servicio.
+   - NORAS: No relacionado con actos del servicio.
+
+Z.2 Total de partes de enfermo para cómputo de descuentos
+   - En el campo TOTAL, registrar únicamente la suma (en días) de los partes de enfermo "NORAS" para facilitar el cálculo de descuentos en las jerarquías correspondientes.
+
+Z.3 Control de correspondencia de datos
+   - Verificar que los datos asentados en los campos DESDE y HASTA coincidan exactamente con los días registrados en el campo TIEMPO (en días) de parte de enfermo, evitando contradicciones entre ellos.
+
+AA. Guía para Completar los Rubros de Situación Procesal, Documentos Agregados y Observaciones en el DACA
+
+AA.1 Rubro “Situación Procesal”
+   - Registro de Situación:
+      - Documentar la situación procesal del causante en los siguientes casos:
+      - Causa penal en el ámbito civil.
+      - Información disciplinaria por falta gravísima.
+      - Información administrativa, que debe coincidir con lo especificado en el DUFI.
+      - Actualizar este registro al momento de obtener una resolución o sentencia, dejando constancia de la decisión tomada.
+
+AA.2 Rubro “Documentos Agregados”
+   - Registro de Sanciones y Antecedentes:
+      - Anotar el/los números de sanciones disciplinarias registradas en el informe y adjuntadas al DACA.
+      - Incluir otros antecedentes adicionales que se adjunten al documento.
+      - En caso de requerir espacio adicional, adherir un papel complementario con el formato adecuado y tamaño de la hoja del DACA, con toda la documentación necesaria.
+      - Registrar los anexos 14a, 14b, 14d y/o 14e en caso de que se hayan confeccionado.
+
+AA.3 Rubro “Observaciones”
+   - Registro de Observaciones:
+      - Anotar todas las observaciones pertinentes, asegurando que el DACA esté libre de enmiendas, raspaduras, textos borrados o sobrescritos.
+      - Este rubro permite realizar correcciones necesarias en el DACA sin afectar la integridad visual del documento.
+
+AB. Anotaciones en Caso de Reclamos
+AB.1 Procedimiento en caso de desestimación del reclamo
+
+   - Si el reclamo es desestimado, la instancia correspondiente debe:
+      - Circundar y/o subrayar con tinta roja las calificaciones y/o conceptos sobre los que se ha reclamado.
+   - Realizar las siguientes anotaciones en el rubro OBSERVACIONES:
+      - Colocar la palabra "Reclamo" en tinta roja.
+      - En el casillero TEXTO A CORREGIR - AGREGAR o ACLARAR, escribir en tinta roja: "Correspondiente a la [número de instancia] instancia lo desestimé, con fecha [fecha]", y firmar en tinta roja en el casillero Firma que certifica.
+
+AB.2 Procedimiento en caso de aceptación total o parcial del reclamo
+   - Si el reclamo es aceptado total o parcialmente, la instancia correspondiente debe:
+      - Circundar y/o subrayar con tinta roja las calificaciones y/o conceptos sobre los que se ha reclamado.
+      - Registrar en tinta roja la nueva calificación y/o concepto.
+
+   - Realizar las siguientes anotaciones en el rubro OBSERVACIONES:
+      - Colocar la palabra "Reclamo" en tinta roja.
+      - En el casillero TEXTO A CORREGIR - AGREGAR o ACLARAR, escribir en tinta roja: "Correspondiente a la [número de instancia] instancia. Le hice lugar [total o parcialmente]. Corresponde en consecuencia [nueva calificación o concepto]", y firmar en tinta roja en el casillero Firma que certifica.
+   
+   - Si las calificaciones modificadas afectan los promedios:
+      - La instancia que cierra el informe deberá registrar el nuevo promedio en tinta roja, a la derecha del promedio anterior.
+   
+   - Tras realizar las modificaciones:
+      El causante deberá firmar para indicar su Enterado. Al final del texto en el casillero TEXTO A CORREGIR - AGREGAR o ACLARAR, colocar la palabra "Enterado" en tinta roja, seguida de la firma del causante en el mismo color.
+
+AB.3 Firma del Jefe del Órgano de Personal
+
+   - El Oficial de Personal deberá colocar su firma, aclaración, lugar y fecha al final de la hoja número DOS (2).
