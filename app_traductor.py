@@ -57,6 +57,11 @@ def mejorar_pregunta(pregunta: str, contexto: str) -> list:
     # Crear el prompt con el contexto
     prompt = f"""
     Eres un asistente especializado en mejorar la redacción de preguntas para hacerlas más claras y correctas.
+    Debes considerar que las preguntas deben ser corregidas para que se adapten al español de la Real Academia española.
+    Debes mantener el significado original de la pregunta y mejorar su redacción.
+    Debes evitar preguntas ambiguas o confusas.
+    Debes reemplazar apodos, por sinonimos o términos más formales.
+    Debes evitar preguntas que puedan tener respuestas subjetivas.
     Tienes acceso al siguiente contexto relacionado con el tema:
     
     {contexto}
