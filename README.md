@@ -34,11 +34,11 @@ Este proyecto implementa un sistema de preguntas y respuestas que utiliza docume
 5. Escribe 'salir' para terminar la sesión.
 
 ## Configuración
-
-- Puedes modificar el modelo de embeddings en las funciones `create_and_save_index` y `load_index`.
-- El tamaño de los chunks y el solapamiento se pueden ajustar en la función `process_folder`.
-- El modelo de lenguaje se puede cambiar en la función `setup_qa_system`.
-
+- Instalar Ollama y elegir el modelo llama3, ejecutando en la consola de Ollama el comando ollama pull llama3.
+- Descargar Python.
+- Descargar las librerias del archivo requirements.txt con el comando pip install -r requirements.txt.
+- Si el dispositivo cuenta cuenta nucleos cuda cambiar en la funcionj load_index en la variable embeddings cpu por cuda, descargar de la pagina pytorch -> get started -> elegir el pip que da la pagina.
+  
 ## Notas
 
 - Este sistema utiliza FAISS para el almacenamiento y búsqueda de vectores, lo que permite una recuperación rápida de información relevante.
