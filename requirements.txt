@@ -1,0 +1,14 @@
+streamlit
+langchain
+PyPDF2
+sentence-transformers
+faiss-cpu
+huggingface-hub
+langchain-community
+dotenv
+ollama
+langchain-huggingface
+langchain-ollama
+python-dotenv
+multiprocessing-logging
+InstructorEmbeddings
