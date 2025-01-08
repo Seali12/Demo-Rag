@@ -1,3 +1,123 @@
+Índice del Manual DACA
+
+Parte 1: Aspectos Generales y Procedimientos Básicos
+
+A. Objetivos del DACA
+- A.1 Evaluación del desempeño anual
+- A.2 Información adicional para juntas
+- A.3 Capacidades para tareas futuras
+
+B. Procedimiento General de Calificación
+- B.1 Uso del formulario DACA
+- B.2 Instrucciones de llenado
+
+C. Iniciación y Cierre del DACA
+- C.1 Fechas
+- C.2 Altas, bajas y reincorporaciones
+
+D. Obligación de Calificación
+- D.1 Responsabilidad del superior
+- D.2 Calificación en cambios de destino
+
+E. Comisiones del Servicio
+- E.1 Comisiones dentro de la Fuerza
+- E.2 Comisiones en otras Fuerzas
+- E.3 Comisiones en el extranjero
+- E.4 Otras situaciones específicas
+
+F. Aspectos adicionales
+- F.1 Comisiones que cruzan períodos
+
+G. Calificación de Aptitud Física
+- G.1 Resultados PAFB
+
+H. Informes Parciales y Calificación de Suboficiales
+- H.1 Informes Parciales para Suboficiales
+
+I. Instancias de Calificación
+- I.1 Número de instancias necesarias
+- I.2 Excepciones
+
+J. Cambios de Destino y Cierre del DACA
+- J.1 Procedimiento durante cambio
+- J.2 Cierre anual
+
+K. Modificaciones Posteriores
+- K.1 Reportes de cambios relevantes
+
+L. Partes Constitutivas del DACA
+- L.1 Antecedentes
+- L.2 Rendimiento
+- L.3 Cualidades
+- L.4 Potencialidades
+- L.5 Aspecto físico
+
+M. Evaluación del Desempeño como Evaluador
+- M.1 Reflejo numérico de calificaciones
+
+N. Relación entre Rendimiento y Cualidades
+- N.1 Parámetros de evaluación
+
+O. Calificación conceptual
+- O.1 Propósitos
+- O.2 Particularidades
+- O.3 Criterios específicos
+
+P. Aspectos del proceso de calificación
+- P.1 Directrices para calificadores
+- P.2 Consecuencias de calificación incorrecta
+
+Q. Responsabilidades de comando
+
+R. Procedimiento de llenado
+
+S. Guía para confeccionar DACA
+- S.1 Consideraciones generales
+- S.2 Encabezamiento
+- S.3 Tipos de formularios
+- S.4 Sello de originalidad
+- S.5 Rubro "Período"
+
+T. Sección "Antecedentes"
+- T.1 Formato y estilo
+
+U. Guía Alta, Baja o Retiro y Ascenso
+- U.1 Rubro "Alta, Baja o Retiro"
+- U.2 Rubro "Ascenso"
+
+V. Guía Condecoraciones, Títulos, Revista y Comisiones
+- V.1 Condecoraciones y Distinciones
+- V.2 Título – Aptitud – Denominación
+- V.3 Situación de Revista
+- V.4 Comisiones Ordenadas
+
+X. Guía Cursos, Estudios e Idiomas
+- X.1 Rubro "Curso – Denominación"
+- X.2 Rubro "Estudios"
+- X.3 Rubro "Idiomas"
+
+Y. Rubro Sanciones Disciplinarias
+- Y.1 Registro de sanciones
+- Y.2 Suplemento adicional
+- Y.3 Total sanciones
+- Y.4 Modificación/anulación
+
+Z. Rubro Partes de Enfermo
+- Z.1 Registro
+- Z.2 Total para descuentos
+- Z.3 Control de correspondencia
+
+AA. Guía Situación Procesal y Documentos
+- AA.1 Situación Procesal
+- AA.2 Documentos Agregados
+- AA.3 Observaciones
+
+AB. Anotaciones en Caso de Reclamos
+- AB.1 Desestimación
+- AB.2 Aceptación
+- AB.3 Firma del Jefe
+
+
 Documento de Antecedentes y Calificación Anual (DACA) - Resumen Instructivo
 
 A Objetivos del DACA
@@ -283,9 +403,14 @@ Z.1 Registro de partes de enfermo
    - En el casillero Observaciones, especificar si el parte de enfermo fue consecuencia de un acto del servicio o no, utilizando las leyendas en letra de imprenta:
    - SIRAS: Si relacionado con actos del servicio.
    - NORAS: No relacionado con actos del servicio.
+   - Se debe verificar la exacta correspondencia entre las fechas registradas en los campos DESDE y HASTA con el TIEMPO (en días) del parte de enfermo.
+   - Los datos deben ser asentados claramente para evitar cualquier tipo de contradicción en el registro.
+   - La información debe estar completa y legible en letra de imprenta.
 
 Z.2 Total de partes de enfermo para cómputo de descuentos
    - En el campo TOTAL, registrar únicamente la suma (en días) de los partes de enfermo "NORAS" para facilitar el cálculo de descuentos en las jerarquías correspondientes.
+   - Este total será utilizado específicamente para el cómputo de descuentos cuando corresponda según la jerarquía del personal.
+   - La suma debe incluir exclusivamente los días marcados como "NORAS", excluyendo aquellos identificados como "SIRAS".
 
 Z.3 Control de correspondencia de datos
    - Verificar que los datos asentados en los campos DESDE y HASTA coincidan exactamente con los días registrados en el campo TIEMPO (en días) de parte de enfermo, evitando contradicciones entre ellos.

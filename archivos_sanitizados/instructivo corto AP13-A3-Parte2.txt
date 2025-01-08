@@ -1,3 +1,33 @@
+Parte 2: Calificaciones y Procedimientos Específicos
+
+AC. Instrucciones Parte II del DACA
+- AC.1 Normas Generales
+- AC.2 Calificación Oficiales Superiores
+
+AE. Calificación Oficiales Jefes
+- AE.1 Rendimiento en Servicio
+- AE.2 Cualidades Personales
+- AE.3 Síntesis Conceptual
+- AE.4 Potencialidades
+- AE.5 Aspecto Físico
+- AE.6 Comprobaciones IGE
+- AE.7 Partes de Enfermo y Sanciones
+- AE.8 Resumen Calificaciones
+
+AF. Calificación Oficiales Subalternos y Suboficiales
+- AF.1 Procedimientos específicos
+- AF.2 Personal Escalafón Complementario
+
+AG. Documentos Complementarios
+- AG.1 Anexo 14a
+- AG.2 Anexo 14b
+- AG.3 Anexo 14c
+- AG.4 Anexo 14d
+- AG.5 Anexo 14e
+
+AH. Suplementos para Formularios
+
+
 AC. Instrucciones para Calificar en la Parte II del DACA
 AC.1 Normas Generales para la Calificación
    - Alcance de la Calificación:

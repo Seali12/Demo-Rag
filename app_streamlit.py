@@ -6,7 +6,6 @@ from langchain.prompts import PromptTemplate
 from langchain.chains.retrieval_qa.base import RetrievalQA
 import os
 
-# Configuración inicial
 st.set_page_config(page_title="Asistente REDOAPE", page_icon="🤖", layout="wide")
 
 # Función para obtener contexto
@@ -20,7 +19,7 @@ def obtener_contexto(retriever, pregunta, k=5):
         return ""
 
 def mejorar_pregunta(pregunta, contexto):
-    llm = OllamaLLM(model="llama3", temperature=0.2)
+    llm = OllamaLLM(model="llama3", temperature=0.1)
     prompt = f"""
     Eres un asistente especializado en reformular preguntas en ESPAÑOL, 
     mejorando su claridad, precisión y redacción. IMPORTANTE: Todas las 
@@ -82,7 +81,7 @@ def load_qa_system():
                 embeddings, 
                 allow_dangerous_deserialization=True
             )
-            retriever = index.as_retriever(search_kwargs={"k": 10})
+            retriever = index.as_retriever(search_kwargs={"k": 15})
             
             llm = OllamaLLM(model="llama3", temperature=0.1)
             prompt_template = """Eres un asistente especializado en documentos REDOAPE. 

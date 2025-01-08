@@ -1,0 +1,65 @@
+Manual Parte de Enfermo
+
+A. Introducción General
+A.1 Propósito de la aplicación:
+    - Esta herramienta permitirá registrar los PARTES DE ENFERMO del personal de cuadros y soldados del organismo. Además, servirá como base para los registros automáticos en el Documento de Antecedentes de Calificación Anual (DACA) de cada causante.
+
+A.2 Base para la elaboración de estadísticas:
+    - La aplicación permitirá generar estadísticas útiles para la toma de decisiones estratégicas dentro de la institución.
+
+A.3 Módulo futuro:
+    - En una segunda etapa, se desarrollará un módulo adicional que gestionará las Juntas Médicas y determinará la Situación de Revista del personal enfermo.
+
+B. Generalidades
+B.1 Usuarios de la aplicación:
+    - Esta versión inicial puede ser utilizada por el Titular, Oficial de Personal / Auxiliar Oficial de Personal y Oficial Médico del Organismo. El Jefe y el Médico del Organismo tendrán acceso a una pantalla de control y seguimiento.
+
+B.2 Rol del Jefe del Organismo:
+    - El Jefe del Organismo deberá designar los roles en la aplicación “admin-apps” del SIAM, en la intranet de la Fuerza, antes del uso de la herramienta.
+
+B.3 Importancia del rol de Auxiliar Oficial de Personal:
+- Este rol posee los mismos privilegios y accesos que el S1 del Organismo, por lo que su designación requiere especial atención.
+
+C. Ingreso al Sistema
+C.1 Requisitos para acceder:
+    - Desde una PC conectada a la intranet del Ejército y usando un navegador compatible (como Google Chrome).
+
+C.2 Proceso de autenticación:
+    - Es necesario ingresar al portal de intranet de la Fuerza utilizando "DNI o usuario de correo" y "Contraseña".
+
+C.3 Navegación hacia la aplicación:
+    - Dentro del portal de intranet, seleccionar SIAM en la parte superior derecha y hacer doble clic sobre el ícono de la aplicación "p-enfermo".
+
+D. Oficial de Personal
+D.1 Definiciones:
+    - Los partes de enfermo pueden tener los siguientes estados: Vigente: Fecha de finalización igual o posterior a la fecha actual. Vencido: Fecha de finalización anterior a la fecha actual; requiere “Extensión” o “Alta”. Cerrado: Ciclo completo (PE - EPE - APE); registrado automáticamente en el DACA.
+
+D.2 Requerimientos:
+    - El Oficial de Personal debe escanear o fotografiar los formularios en papel (PE, EPE, APE) firmados por el Médico. Estos documentos son obligatorios y deben subirse al sistema (máximo 1 MB).
+
+D.3 Control de fechas y condiciones:
+    - La Fecha de Alta en el formulario APE indica el primer día en que el causante vuelve a estar apto para el servicio.
+    - Para una EPE, la fecha de inicio será automáticamente el día siguiente a la fecha de finalización del PE o última EPE previa.
+    - El sistema calcula automáticamente la duración del PE o EPE. El Oficial debe verificar la coherencia con el documento físico.
+
+D.4 Resaltado de partes no cerrados:
+    - El sistema resalta los partes pendientes según el tiempo transcurrido:
+        - AMARILLO: 15 días.
+        - CELESTE: 30 días.
+        - ROJO: 45 días.
+
+D.5 Coincidencia entre documentos físicos y digitales:
+    - Todo lo ingresado en los formularios digitales debe coincidir exactamente con los datos de los documentos físicos almacenados en la aplicación.
+
+E. Acciones o Que se puede hacer
+E.1 Editar:
+    - Disponible únicamente para partes vigentes.
+    - Cualquier modificación debe estar respaldada por el formulario en papel firmado por el Médico y escaneado en el sistema.
+
+E.2 Alta:
+    - Permite ingresar el formulario de Alta del Parte de Enfermo (APE) hecho por el Médico.
+    - El alta definitiva puede ser cargada como alta anticipada si la fecha es anterior a la finalización del parte o su extensión, siempre que el causante esté apto para el servicio antes de lo estimado.
+
+E.3 Extensión:
+    - Abre el formulario para cargar una Extensión del Parte de Enfermo (EPE).
+    - Incluye una sección superior para visualizar el historial del parte.
