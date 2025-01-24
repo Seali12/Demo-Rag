@@ -99,7 +99,7 @@ def obtener_contexto(index, pregunta, k=5):
     return contexto
 
 def setup_qa_system(index):
-    llm = OllamaLLM(model="llama3", temperature=0.1)
+    llm = OllamaLLM(model="llama3", temperature=0)
     prompt_template = """Eres un asistente virtual especializado en los documentos DACA relacionados con el Ejército Argentino. 
     Tu conocimiento abarca reglamentos, procedimientos, jerarquías y normativas específicas de la institución.
 
@@ -124,7 +124,7 @@ def setup_qa_system(index):
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
-        retriever=index.as_retriever(search_kwargs={"k": 10}),
+        retriever=index.as_retriever(search_kwargs={"k": 15}),
         return_source_documents=True,
         chain_type_kwargs={"prompt": PROMPT}
     )

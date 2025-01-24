@@ -4,11 +4,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 from langchain.chains.retrieval_qa.base import RetrievalQA
-import os
 
-st.set_page_config(page_title="Asistente REDOAPE", page_icon="🤖", layout="wide")
+# Configurar la página de Streamlit
+st.set_page_config(page_title="Asistente REDOAPE", page_icon="🤖", layout="centered")
 
-# Función para obtener contexto
+# Funciones del sistema
 def obtener_contexto(retriever, pregunta, k=5):
     try:
         resultados = retriever.get_relevant_documents(pregunta)
@@ -19,7 +19,7 @@ def obtener_contexto(retriever, pregunta, k=5):
         return ""
 
 def mejorar_pregunta(pregunta, contexto):
-    llm = OllamaLLM(model="llama3", temperature=0.1)
+    llm = OllamaLLM(model="llama3", temperature=0.2)
     prompt = f"""
     Eres un asistente especializado en reformular preguntas en ESPAÑOL, 
     mejorando su claridad, precisión y redacción. IMPORTANTE: Todas las 
@@ -44,29 +44,16 @@ def mejorar_pregunta(pregunta, contexto):
     Devuelve SOLO las 3 preguntas reformuladas, una por línea, 
     sin numeración ni explicaciones adicionales.
     """
-    
     try:
         result = llm(prompt)
-        # Limpiar y filtrar las opciones
-        opciones = [
-            opcion.strip() 
-            for opcion in result.split("\n") 
-            if opcion.strip() and 
-               len(opcion.strip()) > 10 and 
-               # Filtro adicional para asegurar que sea español
-               not any(palabra in opcion.lower() for palabra in ['what', 'how', 'why', 'where', 'when'])
-        ]
-        
+        opciones = [opcion.strip() for opcion in result.split("\n") if opcion.strip()]
         if len(opciones) < 3:
             opciones = [pregunta]
-        
         opciones.insert(0, pregunta)
-        
-        return opciones[:4]  # Limitar a 4 opciones
-    
+        return opciones[:4]
     except Exception as e:
         st.error(f"Error al generar preguntas mejoradas: {e}")
-        return [pregunta]  # Devolver la pregunta original en caso de error
+        return [pregunta]
 
 # Cargar el sistema QA
 def load_qa_system():
@@ -83,7 +70,7 @@ def load_qa_system():
             )
             retriever = index.as_retriever(search_kwargs={"k": 15})
             
-            llm = OllamaLLM(model="llama3", temperature=0.1)
+            llm = OllamaLLM(model="llama3", temperature=0)
             prompt_template = """Eres un asistente especializado en documentos REDOAPE. 
             Contexto: {context}
             Pregunta: {question}
@@ -116,7 +103,7 @@ def display_chat():
 def main():
     st.title("🤖 Asistente REDOAPE")
     st.markdown("Sistema de consultas inteligente para documentos.")
-    
+
     load_qa_system()
 
     if 'messages' not in st.session_state:

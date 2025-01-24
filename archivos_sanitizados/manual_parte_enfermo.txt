@@ -1,4 +1,4 @@
-Manual Parte de Enfermo
+Manual Aplicación De Parte de Enfermo
 
 A. Introducción General
 A.1 Propósito de la aplicación:
@@ -32,7 +32,10 @@ C.3 Navegación hacia la aplicación:
 
 D. Oficial de Personal
 D.1 Definiciones:
-    - Los partes de enfermo pueden tener los siguientes estados: Vigente: Fecha de finalización igual o posterior a la fecha actual. Vencido: Fecha de finalización anterior a la fecha actual; requiere “Extensión” o “Alta”. Cerrado: Ciclo completo (PE - EPE - APE); registrado automáticamente en el DACA.
+    - Los partes de enfermo pueden tener los siguientes estados: 
+        - Vigente: Fecha de finalización igual o posterior a la fecha actual. 
+        - Vencido: Fecha de finalización anterior a la fecha actual; requiere “Extensión” o “Alta”. 
+        - Cerrado: Ciclo completo (PE - EPE - APE); registrado automáticamente en el DACA.
 
 D.2 Requerimientos:
     - El Oficial de Personal debe escanear o fotografiar los formularios en papel (PE, EPE, APE) firmados por el Médico. Estos documentos son obligatorios y deben subirse al sistema (máximo 1 MB).
@@ -51,7 +54,7 @@ D.4 Resaltado de partes no cerrados:
 D.5 Coincidencia entre documentos físicos y digitales:
     - Todo lo ingresado en los formularios digitales debe coincidir exactamente con los datos de los documentos físicos almacenados en la aplicación.
 
-E. Acciones o Que se puede hacer
+E. Acciones de la aplicación de parte de enfermo
 E.1 Editar:
     - Disponible únicamente para partes vigentes.
     - Cualquier modificación debe estar respaldada por el formulario en papel firmado por el Médico y escaneado en el sistema.

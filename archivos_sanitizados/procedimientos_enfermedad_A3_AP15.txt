@@ -1,0 +1,106 @@
+PROCEDIMIENTO A SEGUIR PARA LA TRAMITACIÓN DE ACTAS, INFORMACIONES O SUMARIOS POR ENFERMEDAD O ACCIDENTE
+
+A. Observaciones por Errores en la Tramitación de la información
+A.1 Deficiencias en la Documentación:
+    - Planilla de Antecedentes Militares (PAM) frecuentemente incompleta o ausente.
+    - Datos faltantes comunes incluyen:
+        - Fechas de alta y baja de la Fuerza
+        - Fechas de iniciación y finalización del parte de enfermo
+        - Lugar de asistencia
+        - Diagnóstico correcto
+
+A.2 Declaraciones:
+- Interrogatorio superficial de enfermedad y/o accidente:
+    - Insuficiente profundidad en signos y síntomas
+    - Omisión de fechas específicas
+    - Diagnósticos incompletos
+    - Falta de análisis de antecedentes
+    - Tratamientos no detallados
+    - Ausencia de evaluación de vinculación con actos de servicio
+
+A.3 Problemas en Declaraciones Testimoniales:
+- Declaraciones poco verosímiles
+- Omisión frecuente de testimonios de:
+    - Médico
+    - Enfermero
+    - Personal de sanidad interviniente
+- Declaraciones repetitivas
+- Coincidencias sospechosas entre testimonios
+- Evidencia de apreciación incorrecta de los hechos
+
+A.4 Incumplimiento de Plazos:
+- No se respetan los plazos reglamentarios establecidos en la documentación vigente
+
+B. Observaciones de la Documentación Clínica
+B.1 Ficha Individual de Salud:
+    - Omisión de fotocopia cuando se trata de S/C (Referencia: RV 113 - 3 Régimen Funcional de Sanidad Nro 8.055 Pág. 139)
+
+B.2 Legajo Médico del Personal Militar:
+    - Falta de fotocopias de antecedentes de enfermedad
+    - Omisión de documentación en Junta Médica Superior
+    - No se asientan partes de enfermo ni reconocimientos médicos, en otros casos se encuentran en blanco.
+
+B.3 Hoja Resumen de Historia Clínica - Nivel Unidad:
+- Deficiencias de fondo y forma, evidenciando la falta de preocupacion del responsable
+- Omisiones frecuentes:
+    - Signos y síntomas básicos
+    - Fechas de inicio y terminación del parte de enfermo
+    - Evolución cronológica del proceso
+    - Fechas de intervenciones quirúrgicas
+    - Táctica y técnica operatoria
+- Descripciones semiológicas insuficientes, falta de claridad y cronología lógica
+- Para un ordenamiento uniforme seguir Referencia: RFD 23-01 "Régimen Funcional de Sanidad", Art 8.060, , inc 4, apart a y ó b pag 144 a 152.
+
+B.4 Documentación de Lesiones:
+    - Omisión de detalles en lesiones por arma de fuego
+    - Información faltante:
+        - Orificio de entrada/salida
+        - Trayectoria de proyectiles
+        - Tipo de lesión
+        - Número exacto de lesiones
+    - Detalles de disparo (distancia, dirección)
+    - No se consigna naturaleza de las lesiones
+
+B.5 Condiciones de Alta:
+    - Errores en clasificación de aptitud
+    - Incorrecta referencia a reglamentos
+    - Omisión de números de artículo y edición
+
+B.6 Evacuaciones:
+    - Omisión de escalones de evacuación
+    - Historias clínicas no actualizadas
+    - Falta de firmas legibles
+    - Informes sucintos e imprecisos
+    - Documentación "Confidencial Médico" frecuentemente en sobres abiertos, perdiendo dicho carácter
+
+B.7 Historia Clínica - Nivel Hospitales Militares:
+    - Se observan los mismos errores, omisiones y defectos que el nivel Unidad, aunque en menor grado. Por lo general, se agrega una fotocopia de la Historia Clínica que resulta ilegible.
+    - La autoridad responsable deberá tomar las medidas necesarias para que sea debidamente mecanografiada, sin previa solicitud de la Junta Superior de Reconocimientos Médicos.
+    - Se deberá dar estricto cumplimiento a lo determinado en el RV-113-3 Régimen Funcional de Sanidad para la Historia Clínica de Hospitales Militares (Art 8.060, inc a) pág. 144 y 145).
+
+B.8 Informes de Hospitales Militares (Al Anexo 40):
+    - Se deben ajustar estricta y puntualmente a las Juntas Médicas, especialmente en lo referente a:
+        - Diagnóstico
+        - Estado Actual
+        - Forma Clínica
+        - Tiempo probable de curación
+    - Lo concerniente a la Aptitud Militar, Relación con Actos de Servicio y Capacidad Laborativa es resorte exclusivo de las respectivas Juntas Médicas.
+    - Generalmente, los informes son escuetos y no se ajustan a los requerimientos de la Junta Médica.
+    - Se observa falta de la firma del Jefe del Servicio respectivo y/o la firma visa de la dirección, con el respectivo número de expediente.
+    - Los informes de los Hospitales tienen valor médico-legal, por lo que deben ser redactados de puño y letra o a máquina, pero firmados por el Jefe del Servicio (si es médico militar) o refrendados por médico militar autorizado.
+
+B.9 Certificado Médico Provisorio:
+    - Deberá estar completo en dos partes:
+        - Primera parte: datos de filiación exactos del causante, firma del médico tratante, libro, folio, fecha, etc.
+        - Diagnóstico de fallecimiento con causa inmediata, concurrente y alejada, debidamente legalizados.
+
+B.10 Informe de Autopsia:
+    - Es de vital importancia. Generalmente, los protocolos son incompletos por desconocimiento del responsable.
+    - En algunos casos, la necropsia se omite injustificadamente o por razones afectivas, lo que no es admisible.
+    - La autopsia debe considerarse como un acto médico científico de importancia médico-legal, aportando datos esenciales para las conclusiones.
+
+B.11 Actuaciones Policiales:
+    - En casos de accidentes en el ámbito civil, se observa la falta con frecuencia copia de las actuaciones o informes policiales, indispensables para un dictamen médico-legal adecuado.
+
+B.12 Test Psiquiátrico:
+    - Deberá incluirse siempre que se instruyan actuaciones de Justicia Militar al personal de tropa por faltas graves. La omisión de este requisito genera numerosos inconvenientes.
