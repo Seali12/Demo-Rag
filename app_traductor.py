@@ -1,125 +1,180 @@
-from langchain_ollama import OllamaLLM
+import streamlit as st
+import torch
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.document_loaders import DirectoryLoader, TextLoader
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.text_splitter import CharacterTextSplitter
-from dotenv import load_dotenv
-import os
+from langchain_ollama import OllamaLLM
+from langchain.prompts import PromptTemplate
+from langchain.chains.retrieval_qa.base import RetrievalQA
 
-# Cargar las variables de entorno
-load_dotenv()
+st.set_page_config(page_title="Asistente REDOAPE", page_icon="🤖", layout="centered")
 
-# Procesar archivos desde una carpeta y crear un índice
-def crear_indice(carpeta, index_name):
-    """Crea un índice a partir de los archivos en la carpeta especificada."""
-    print(f"Procesando archivos en la carpeta '{carpeta}'...")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+st.sidebar.info(f"Corriendo en: {device}")
 
-    # Cargar los archivos de texto
-    loader = DirectoryLoader(
-            carpeta,
-            glob="*.txt",
-            loader_cls=lambda file_path: TextLoader(file_path, encoding="utf-8")
-        )
-    documentos = loader.load()
-   
-    if not documentos:
-        print("No se encontraron archivos en la carpeta especificada.")
-        return None
+def obtener_contexto(retriever, pregunta, k=5):
+    try:
+        resultados = retriever.get_relevant_documents(pregunta)
+        contexto = "\n".join([doc.page_content for doc in resultados])
+        return contexto
+    except Exception as e:
+        st.error(f"Error al obtener contexto: {e}")
+        return ""
 
-    # Dividir los documentos en fragmentos
-    splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
-    documentos_divididos = splitter.split_documents(documentos)
+def mejorar_pregunta(pregunta, contexto):
+    llm = OllamaLLM(
+        model="deepseek-r1:14b",
+        temperature=0,
+        extra_model_kwargs={
+            "gpu": True,
+            "n_gpu_layers": 35
+        } if device == "cuda" else {}
+    )
+    prompt = f"""Como asistente en español, tu tarea es reformular la siguiente pregunta de 3 formas diferentes.
 
-    # Crear embeddings y construir el índice
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": "cpu"})
-    index = FAISS.from_documents(documentos_divididos, embeddings)
+Reglas:
+1. SOLO proporciona las preguntas reformuladas, nada más
+2. Cada pregunta debe estar en una línea separada
+3. NO incluyas números, explicaciones ni etiquetas
+4. Las preguntas deben ser más específicas que la original
+5. Usa SOLO español
+6. NO uses etiquetas como <think> o similares
 
-    # Guardar el índice
-    os.makedirs("faiss_indexes", exist_ok=True)
-    index.save_local(f"faiss_indexes/{index_name}")
-    print(f"Índice creado y guardado como '{index_name}'.")
-    return index
+Pregunta original: {pregunta}
 
-# Cargar el índice desde disco
-def cargar_indice(index_name):
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": "cpu"})
-    return FAISS.load_local(f"faiss_indexes/{index_name}", embeddings, allow_dangerous_deserialization=True)
+Reformula la pregunta de 3 formas diferentes:"""
 
-# Obtener contexto relevante del índice
-def obtener_contexto(index, pregunta, k=5):
-    retriever = index.as_retriever(search_kwargs={"k": k})
-    resultados = retriever.get_relevant_documents(pregunta)
-    contexto = "\n".join([doc.page_content for doc in resultados])
-    return contexto
+    try:
+        result = llm(prompt)
+        opciones = [opcion.strip() for opcion in result.split("\n") if opcion.strip() and not opcion.startswith("<")]
+        if len(opciones) < 3:
+            opciones = [pregunta]
+        opciones.insert(0, pregunta)
+        return opciones[:4]
+    except Exception as e:
+        st.error(f"Error al generar preguntas mejoradas: {e}")
+        return [pregunta]
 
-# Función para generar diferentes formas de hacer la misma pregunta
-# Función para generar diferentes formas de hacer la misma pregunta
-def mejorar_pregunta(pregunta: str, contexto: str) -> list:
-    """Genera alternativas de la misma pregunta de manera más clara o correcta, considerando el contexto."""
-    # Define el modelo y el prompt para mejorar las preguntas
-    llm = OllamaLLM(model="llama3", temperature=0.2)
+def load_qa_system():
+    if 'qa_system' not in st.session_state:
+        try:
+            embeddings = HuggingFaceEmbeddings(
+                model_name="sentence-transformers/all-MiniLM-L6-v2", 
+                model_kwargs={"device": device}
+            )
+            
+            index = FAISS.load_local(
+                "faiss_indexes/archivos_procesados",
+                embeddings,
+                allow_dangerous_deserialization=True
+            )
+            retriever = index.as_retriever(search_kwargs={"k": 10})
+            
+            llm = OllamaLLM(
+                model="deepseek-r1:14b",
+                temperature=0,
+                extra_model_kwargs={
+                    "gpu": True,
+                    "n_gpu_layers": 35
+                } if device == "cuda" else {}
+            )
+            
+            prompt_template = """Eres un asistente experto que responde preguntas sobre documentos REDOAPE.
 
-    # Crear el prompt con el contexto
-    prompt = f"""
-    Eres un asistente especializado en mejorar la redacción de preguntas para hacerlas más claras y correctas.
-    Debes considerar que las preguntas deben ser corregidas para que se adapten al español de la Real Academia Española.
-    Mantén el significado original de la pregunta y mejora su redacción.
-    Evita preguntas ambiguas o confusas.
-    Evita proporcionar explicaciones o razones en tu respuesta, y devuelve solo las preguntas reformuladas.
-    Tienes acceso al siguiente contexto relacionado con el tema:
-    
-    {contexto}
-    
-   se te proporciona una pregunta escrita por un usuario. 
-   Tu tarea es generar al menos 4 versiones de la misma pregunta, mejor redactadas, sin cambiar el significado original 
-   y utilizando el contexto cuando sea relevante.
-    
-    Pregunta original: {pregunta}
-    
-    Opciones mejoradas:
-    """
+REGLAS ESTRICTAS:
+1. Responde SOLO con la información encontrada en el contexto
+2. Da respuestas CONCISAS y DIRECTAS
+3. NO uses más de 3 oraciones en tu respuesta
+4. NO des explicaciones adicionales
+5. NO uses etiquetas como <think>
+6. Si no hay información en el contexto, responde SOLO: "No encontré información sobre esto en los documentos."
+7. SOLO español
 
-    # Generar las alternativas
-    result = llm(prompt)  # Devuelve un string
+Contexto: {context}
 
-    # Filtrar solo las preguntas
-    opciones_mejoradas = result.split("\n")
-    return [opcion.strip() for opcion in opciones_mejoradas if opcion.strip()]
+Pregunta: {question}
 
-# Ejemplo de uso de la función
+Respuesta concisa:"""
+            
+            PROMPT = PromptTemplate(
+                template=prompt_template,
+                input_variables=["context", "question"]
+            )
+            
+            st.session_state.qa_system = RetrievalQA.from_chain_type(
+                llm=llm,
+                chain_type="stuff",
+                retriever=retriever,
+                chain_type_kwargs={"prompt": PROMPT},
+            )
+            st.session_state.retriever = retriever
+        except Exception as e:
+            st.error(f"Error al cargar el sistema QA: {e}")
+            st.stop()
+
+def display_chat():
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message['content'])
+
 def main():
-    carpeta = "archivos_sanitizados"  # Carpeta donde están los archivos
-    index_name = "archivos_procesados"  # Nombre del índice
+    st.title("🤖 Asistente REDOAPE")
+    st.markdown("Sistema de consultas inteligente para documentos.")
 
-    # Crear el índice si no existe
-    if not os.path.exists(f"faiss_indexes/{index_name}"):
-        print(f"No se encontró el índice '{index_name}'. Creando uno nuevo...")
-        index = crear_indice(carpeta, index_name)
-        if not index:
-            print("No se pudo crear el índice. Asegúrate de que la carpeta contiene archivos.")
-            return
-    else:
-        print(f"Cargando índice existente '{index_name}'...")
-        index = cargar_indice(index_name)
+    load_qa_system()
 
-    while True:
-        pregunta = input("Introduce una pregunta: ")
-        if pregunta.lower() == 'salir':
-            break
+    if 'messages' not in st.session_state:
+        st.session_state.messages = []
+    if 'preguntas_mejoradas' not in st.session_state:
+        st.session_state.preguntas_mejoradas = None
+    if 'show_improved_questions' not in st.session_state:
+        st.session_state.show_improved_questions = False
 
-        # Obtener el contexto relacionado con la pregunta
-        contexto = obtener_contexto(index, pregunta)
+    display_chat()
 
-        if not contexto:
-            print("\nNo se encontró contexto relevante para esta pregunta. Asegúrate de que el índice contenga información relacionada.")
-            continue
+    user_input = st.chat_input("Escribe tu pregunta aquí...")
 
-        # Mejora la pregunta original
-        opciones_mejoradas = mejorar_pregunta(pregunta, contexto)
-       
-        print("\nOpciones mejoradas:")
-        for i, opcion in enumerate(opciones_mejoradas, 1):
-            print(f" {opcion}")
+    if user_input:
+        st.session_state.messages.append(
+            {"role": "user", "content": user_input}
+        )
+
+        contexto = obtener_contexto(
+            st.session_state.retriever,
+            user_input
+        )
+
+        st.session_state.preguntas_mejoradas = mejorar_pregunta(
+            user_input,
+            contexto
+        )
+
+        st.session_state.show_improved_questions = True
+        st.rerun()
+
+    if st.session_state.show_improved_questions and st.session_state.preguntas_mejoradas:
+        st.markdown("### 🔍 Opciones de preguntas mejoradas:")
+        selected_question = st.radio(
+            "Selecciona una pregunta para obtener una respuesta más precisa:",
+            st.session_state.preguntas_mejoradas
+        )
+
+        if st.button("Obtener respuesta"):
+            with st.spinner("Buscando la mejor respuesta..."):
+                result = st.session_state.qa_system({"query": selected_question})
+                response = result["result"]
+
+                st.session_state.messages.append(
+                    {"role": "user", "content": selected_question}
+                )
+
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": response}
+                )
+
+                st.session_state.show_improved_questions = False
+                st.session_state.preguntas_mejoradas = None
+            
+            st.rerun()
 
 if __name__ == "__main__":
     main()

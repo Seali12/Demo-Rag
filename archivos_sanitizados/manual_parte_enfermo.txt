@@ -37,19 +37,20 @@ D.1 Definiciones:
         - Vencido: Fecha de finalización anterior a la fecha actual; requiere “Extensión” o “Alta”. 
         - Cerrado: Ciclo completo (PE - EPE - APE); registrado automáticamente en el DACA.
 
-D.2 Requerimientos:
-    - El Oficial de Personal debe escanear o fotografiar los formularios en papel (PE, EPE, APE) firmados por el Médico. Estos documentos son obligatorios y deben subirse al sistema (máximo 1 MB).
-
-D.3 Control de fechas y condiciones:
-    - La Fecha de Alta en el formulario APE indica el primer día en que el causante vuelve a estar apto para el servicio.
-    - Para una EPE, la fecha de inicio será automáticamente el día siguiente a la fecha de finalización del PE o última EPE previa.
-    - El sistema calcula automáticamente la duración del PE o EPE. El Oficial debe verificar la coherencia con el documento físico.
-
-D.4 Resaltado de partes no cerrados:
+D.2 Resaltado de partes no cerrados:
     - El sistema resalta los partes pendientes según el tiempo transcurrido:
         - AMARILLO: 15 días.
         - CELESTE: 30 días.
         - ROJO: 45 días.
+
+D.3 Requerimientos:
+    - El Oficial de Personal debe escanear o fotografiar los formularios en papel (PE, EPE, APE) firmados por el Médico. Estos documentos son obligatorios y deben subirse al sistema (máximo 1 MB).
+
+D.4 Control de fechas y condiciones:
+    - La Fecha de Alta en el formulario APE indica el primer día en que el causante vuelve a estar apto para el servicio.
+    - Para una EPE, la fecha de inicio será automáticamente el día siguiente a la fecha de finalización del PE o última EPE previa.
+    - El sistema calcula automáticamente la duración del PE o EPE. El Oficial debe verificar la coherencia con el documento físico.
+
 
 D.5 Coincidencia entre documentos físicos y digitales:
     - Todo lo ingresado en los formularios digitales debe coincidir exactamente con los datos de los documentos físicos almacenados en la aplicación.

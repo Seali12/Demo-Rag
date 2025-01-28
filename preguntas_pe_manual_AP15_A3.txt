@@ -1,6 +1,7 @@
 En las definiciones de oficial de personal, cuales son los estados que pueden tener los parte de enfermo?
-Como es el resaltado de los partes no cerrados?
+Segun el manual de parte de enfermo como resalta el sistema los partes de enfermo no cerrados?
 Que acciones se pueden realizar en la aplicacion de parte de enfermo?
 Cuales son los requerimientos para Oficial de Personal?
 Que errores puede haber en las declaraciones en la tramitacion de la informacion?
 Que problemas hay en la Documentacion por lesiones?
+Que errores puede haber en la historia clinica a nivel hospitales?
