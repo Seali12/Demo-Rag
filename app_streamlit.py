@@ -66,7 +66,7 @@ def create_and_save_index(texts, index_name):
     st.success(f"Índice guardado como {index_name}")
 
 def initialize_faiss_index():
-    folder_path = 'archivos_sanitizados'
+    folder_path = 'ArchivosParteEnfermo'
     index_name = 'archivos_procesados'
     index_path = f"faiss_indexes/{index_name}"
 

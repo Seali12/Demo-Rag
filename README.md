@@ -14,7 +14,8 @@ Este proyecto implementa un sistema de preguntas y respuestas que utiliza docume
 
 - Python 3.7+
 - Bibliotecas requeridas (ver `requirements.txt`)
-- crear un archivo .env en el cual contiene HUGGINGFACEHUB_API_TOKEN
+- crear un enviroment: python -m venv nombreEnviroment
+- crear un archivo .env en el cual contiene HUGGINGFACEHUB_API_TOKEN 
 
 ## Instalación
 
